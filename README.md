@@ -1,6 +1,6 @@
-# 🌌 Email Quiz Service - Study via Email with AI Grading
+# 🌌 Galaxy Prelim Studying - Study via Email with AI Grading
 
-A smart Python service that turns your email inbox into a personalized study companion! Get quiz questions delivered to your email, respond at your own pace, and receive AI-powered feedback with detailed explanations. Perfect for spaced repetition learning and exam preparation.
+I am so cooked for my galaxy prelim. So I am going live and breath galaxies for the next 23 days until this course starts making sense to me. I wrote a "smart" Python service that turns your email inbox into a personalized study companion! Get prelim-like questions delivered to your email, respond at your own pace, and receive AI feedback with detailed explanations comparing my own written textbook solutions with your answer. Perfect for spaced repetition learning and exam preparation.
 
 ## ✨ Features
 
