@@ -1,0 +1,692 @@
+questions,answers
+"*** Be able to use equations relating apparent and absolute magnitude. You need not memorize it, but you should familiarize yourself with its use. How does dust impact this relationship?","m - M = 5 log(d) - 5 + A . 
+A is dust extinction"
+*** Be able to compute maximum distance over which a magnitude-limited survey can find stars of a given absolute magnitude. Compute the apparent magnitude limit required to locate stars of a given absolute magnitude at some distance.,"M: Absolute magnitude, m: apparent magnitude
+d=10 pc10(m-M)/5 "
+"Review the effective temperatures and masses of main sequence stars. How massive are O stars? A stars? G stars? Review absolute magnitudes in V-band and B-V colors for O, A, G stars. Again, no need to memorize, but good to be familiar. At what distance can you see stars of each spectral type given a V-band apparent magnitude limit of m=20?","O Stars - 50,000k , 100M_sun, Bluest? - seen at 1mpc (You mean 1Mpc?)
+A Stars - redder than O, B-V < 0.6 - 100 kpc
+G Stars - 5,000k, B-V > 0.6 - 10 kpc
+The maximum distance a star can be observed at, given an apparent magnitude limit (m) of m_V = 20, is determined using the distance modulus equation from above."
+"What is a simple stellar population? You should have intuition for how isochrones evolve as a stellar population ages. Why are isochrones sensitive to metallicity? What is a main sequence turnoff? What is the main sequence lifetime of an O star? A star? G star? No need to memorize, but you should have order of magnitude familiarity.","Simple stellar population: A group of stars that are formed at the same time with same metallicity, following some IMF
+The isochrone of simple stellar population is sensitive to the metallicity (The position of red giants, horizontal branch / red clump stars in the HR diagram / CMD constrain Fe/H.) Metallicity affects effective temperature specifically the impact on the opacity in the atmosphere (insert shit from stars)"
+Have an order of magnitude knowledge of the SFR and stellar mass of the Milky way. How large is the stellar disk? How massive is the SMBH?,"SMBH ~ 10^6 M, Disk ~ 10^9-10^10M, MW (stars) ~ 6*10^10 M, SFR ~ 1M/yr"
+*** Be able to compute distance to stars based on observed parallaxes. Or equivalently compute parallax for stars of a given distance.,1 arcsec = 1 pc  1/theta ~ distance
+*** How do we measure stellar kinematics? Know how to calculate transverse velocity with knowledge of proper motion and distance. Know how to compute radial velocities.,"Radial Velocity: (Along the line of sight) doppler shift of emission lines 
+Transverse Velocity: (Perpendicular to the line of sight (across the plane of the sky)) Measured via proper motion in conjunction with the star's distance. "
+What is photometric parallax? How does the technique work?,"Use the color (i.e., effective temperature) to get the mass and the intrinsic luminosity of the MS stars. Comparing this with the brightness gives the distance. T_eff -> M and then M^4(3) \propto L and then solve for distance from L = 4pid^2 F flux."
+How is the stellar luminosity function measured? Be specific on how distance and luminosity and the volume density are computed. How is this converted to an IMF?,"Step1) take either volume limited sample / apparent magnitude limited sample. 
+Step2) get Luminosity through distance via parallax/photometric parallax measurement to get abs magnitude
+Step3) Bin the data by absolute magnitude -> LF
+Step4) Account for stellar evolution -> Initial LF 
+Step5) Get IMF through theoretical models of Luminosity to mass relation
+Potential bias in extinction and the fact that less bright stars are less detectable per same volume."
+What is Malmquist bias? Why is it important for luminosity function measurements?,"In a magnitude limited survey, the luminous star will be overrepresented (the effective survey volume is larger). The observed luminosity distribution must be corrected for the volume difference.Traditionally this is corrected for by downweighting the counts of most luminous stars by their magnitudes relative to the maximum magnitude (faintest source). Modern approaches use forward modeling with selection functions and some Bayes shit idk bruh"
+What is the Local Standard of Rest? How is it determined?,LSR is 8.2Kpc from the center moving in circular motion at 229km/s. Determined via measuring our relative velocity with young stars (blue stars) since they have lower velocity dispersion. THe distance is determined by the stellar motion around the MBH.
+What is the IMF? Know its form at low and high masses and how it is derived. Why is the shape of the IMF so important in the study of external galaxies? What uncertainties exist in the measurement of the IMF? Does any evidence exist for a departure from a universe IMF form?,"IMF: Initial mass function. This is the distribution of the stellar mass at their birth. For distant galaxies we cannot resolve single stars, and IMF is how we can use the most luminous stars (that dominate the EM spectrum) to infer the mass content (the less massive stars that dominate the total mass). Derived from the Stellar Luminosity Function (LF)
+Massive: This regime is similar to the classic 1955 Salpeter IMF
+Lower Masses: flat slope @ 1 m_sol, revealing a turnover or departure from the Salpeter power law.
+Sub-Stellar Masses: Positive Slope, At masses low enough (around $0.08 M_sol) where hydrogen burning does not occur (i.e., brown dwarfs), the slope may become positive.
+Observational challenge:
+Massive stars are rare → need to sample a large volume → but this will then require assumption that IMF is uniform over a large volume
+If the stars are not formed at the same time → deriving IMF needs assumption on the star formation history (e.g., the formation rate is constant)
+Mass segregation in stellar cluster will change the distribution
+Hints that IMF is not universal:
+Some cores of elliptical galaxies may have “bottom-heavy” IMF
+Potential IMF variation in star clusters, but dynamical effects not excluded"
+"Given the form of the IMF and stellar LF, what kind of stars (i.e., massive or low mass) dominate total stellar mass density in the solar neighborhood? luminosity density?",Low mass dominate the total mass (IMF) and brightest stars dominate the (LF)
+"What is the average stellar mass to light ratio in the solar neighborhood? How might this stellar mass to light ratio vary in a globular cluster? Why does it vary?
+","Solar neighborhood: M/L0.67M/L
+Globular cluster: M/L1-4M/L
+Globular clusters are older and have higher mass to light ratio (they don’t have luminous and young massive stars)"
+How do we determine the ages and metallicities of stars? What are α-elements? Why is the α/Fe ratio sensitive to the star formation history? Sketch a plot of how the α/Fe ratio might be expected to vary with [Fe/H]. Explain why the plot looks as it does.,"Assume SSP (all formed at the same time), we can use Main Sequence turnoff to determine the cluster age. We can also fitting isochrones to CMDs
+Alpha elements -> C, O, Ne, Mg, Si, and S formed via Type II SNe -> Core collapse
+Fe -> formed via Type Ia SNe -> some WD on WD violence occuring idk???  
+Delay of ~10^7-10^8yrs from Type II -> Type Ia. 
+
+Strong Alpha abundance initially because Type II goes off hence IMF and as stars are forming Type Ia pollutes with more Iron abundances."
+How is the light distributed in the radial and vertical directions in the disk? Be able to comment on the functional form (exponential) and the scale height and scale length of the thin/thick disk.,"Radial dependence: e-R/Rd, vertical dependence: e-|z|/zd
+Thin disk: Rd=4.2 kpc,zd=260 pc
+Thick disk: Rd=2.7 kpc,zd=700 pc"
+What are typical velocity dispersions in the solar neighborhood? What is the age - velocity dispersion relation? Provide several plausible physical explanations for the origin of the relation.,"Typical velocity dispersion of ~10km/s. Older stars have higher velocity dispersion and younger stars have fewer. (This is from observation where blue stars have lower dispersion than redder stars -> age and sigma)
+Theories, older stars have larger temporal cross sections for dynamical heating? This can be internal like spiral arms or external like minor mergers. There are also idea that turbulence (greater at earlier times) heated these stars dynamically
+"
+"Define asymmetric drift. What do measurements in the solar neighborhood reveal about asymmetric drift? Note, the sign (positive or negative) depends on how it is defined, so be sure to explain physically (i.e., stars lag behind LSR (like a guiding center)).","asymmetric drift: the average speed of stars relative to a star moving in a circular orbit at the Sun’s position
+Measurements show negative drift → more stars are lagging behind"
+"Sketch and describe stellar populations of MW bulge, halo, disk. Compare ages, chemistry, and kinematics. Based on these measurements, what do you think the MW would have looked like at z ≃ 1? What about at z ≃ 6?","MW parts
+Stellar mass
+ages
+chem
+kinematics
+Thick Disk
+5109 M
+Old ~ 10gyr
+Metal poor
+hot
+Thin Disk
+41010 M
+Youngest ~ star forming
+Metal rich
+cold
+Bulge
+1010 M 
+Very old ~ 10 gyr
+mixed
+?
+Stellar Halo
+<1% of total stellar mass
+Oldest > 10gyr
+Poor 
+Hot
+
+
+
+ redshift 6 (When universe was ~10% current age)
+Early Formation Burst? The MW structure would be dominated by the products of the earliest, rapid star formation episodes. The onset of thick disk formation occurred ~ 13 Gyr
+ redshift 1 (When universe was ~50% current age)"
+Observationally how would you determine if the MW has a thick disk? Your answer should include discussion of the observations that led to the discovery of the thick disk in the Milky Way.,"Observations found that the stellar number density as the function of height from the midplane can be fitted by two exponential profiles
+Also found kinematically, more velocity dispersion in thick disk stars than thin disk.
+Also found via Chemical Composition where alpha/Fe show two groups"
+What do we know about the chemistry of the disk? Do metallicities or abundance patterns vary radially? Do they vary vertically? Your answer should describe differences in the chemical properties of thin and thick disk.,"Radially: trend suggests that metal-poor stars are found in the outer disk. This radial gradient is considered a signature of inside-out disk formation where the inner regions formed and chemically enriched first, while the outer disk built up later from more metal-poor gas.
+Vertically: As observed when moving above the midplane there is a shift toward lower metallicity stars. The lower metallicity stars at larger vertical heights implies that these stars belong to the thick disk? although the metallicity distributions of the thin and thick disk populations still overlap lol
+btw the Solar Neighborhood exhibits two distinct sequences in the alpha/Fe plot 
+THICC DISKS !!!
+"
+"Provide a viable scenario to describe the origin of the thick disk. Your answer should include current thinking on the timescale that the stars in the thick disk formed, timescale of disk heating, and how the merger with GSE impacted the disk.","Thick disk has old stars and low metallicity. Formation of thick disk began 13 Gyr ago, and reached maximum at 11.2 Gyr ago. The maximum is roughly the time of merger with Gaia Enceladus, so the merger may have driven the formation of the thick disk. The merger also scattered some stars that were formed before the merger onto low angular momentum orbits (those stars were heated).
+
+Top: High angular momentum stars in thick disk (formed from the merger?)
+Bottom: Low angular momentum stars in thick disk (in place before merger)"
+What is inside-out disk formation and what evidence exists for it in the Milky Way? What evidence exists for radial migration within the disk?,"Inside-out disk growth -> the inner regions of the disk appear to form first, with the outer disk growing later Evidence: Radial Metallicity Gradient, the existence of a radial metallicity gradient across the midplane of the disk.
+Evidence for radial migration: Stars near solar neighborhood have two metallicity-age sequences"
+Roughly what is the mass of the stellar halo? What do observations tell us about the origin and build up of the stellar halo? Your answer should include discussion of streams and substructures.,"Stellar halo mass: 0.1–1% of Milky Way’s total stellar mass (for reference: total stellar mass of MW is 6*10^10 M_sun)
+Observations of the substructures like stellar streams suggest that the halo is built up from the accretion and tidal disruption of satellites (in line with Lambda CDM model). But there may also be contribution from the disk (when the stars get kicked out of the disk in mergers)."
+What observations led to discovery of GSE? Explain the impact of GSE on the Milky Way halo.,"Kinematic: clump of stars in the inner halo (at radii less than 20 kpc?) possess similarly radial orbits. There is an extreme kinematic profile, where stars move mostly perpendicular to the Galactic disk, was dubbed the ""sausage-like velocity distribution"" lol 
+Chemical: These stars are characteristically metal poor and alpha-poor. This chemical pattern is in contrast to the chemically distinct disk stars and strongly suggested an ex-situ origin
+Impact…
+Accreted Stars?: These are the stars that were torn from the progenitor galaxy during the merger
+In-Situ Stars (Heated Disk): The merger event heated stars that had already formed in the Milky Way's early disk prior to the merge
+Thick Disk Formation: The vertical heating caused by the GES merger contributed to the formation of the thick disk
+Kinematics: suggests that the oldest stars with high alpha/FE ratios (thick disk stars) have very low angular momentum, which is expected for stars that experienced disk heating by an external merger"
+What is dark matter substructure? Describe qualitatively why we expect our halo to contain sub-halos. How might you test theoretical expectations with observations in the Milky Way halo?,The sub-halos are predicted from Lambda CDM…? (The distribution of sub-halo mass is determined by the power spectrum of primordial perturbations and the assumed dark-matter model). In practice we try to observe the collision between stellar streams and sub-halos to probe their existence.
+"Describe the stellar populations (age, metallicity) of metal poor and metal rich globular clusters. How many exist in the MW and what is their spatial distribution? How does one measure ages/metallicities of stars in globular clusters?","Metal-Rich Group (Disk/Bulge): This group is characterised by an old age and may have formed in-situ within the Milky Way
+Metal-Poor Group (Halo):  These clusters span a branch extending from metal poor and old to metal rich and young. The outer halo tends to be composed of more metal poor clusters
+globular clusters are generally considered co-eval groups of stars or SSPs (I think this is not the case? see Q28)
+Spatial Distribution: Stellar Halo ~ 100pc? The halo is divided into the inner halo (3-15kpc), which contains clusters like 47 Tuc and NGC 2808, and the outer halo (15-100kpc)
+Total Count: Over 150 globular clusters
+Determine age/metallicity 
+Plot the Color-Magnitude Diagram 
+Fit Theoretical Isochrones
+Determine Age from the MSTO (Age)
+Fix age and then determine Metallicity Sensitivity (metalicity)
+horizontal branch and the red giant branch, which shift depending on the metal content? Idk why WHY ARE RED THINGS SENSITIVE (My guess is that the opacity in the envelope, especially bound-free absorption, relies on the metal emission lines)"
+HST observations have revealed the presence of multiple stellar populations in globular clusters. Describe a scenario for globular cluster formation consistent with the multiple populations.,"Cluster forms its first generation of stars, some of which “pollute” the gas with elements that have been enriched with the CNO cycle of hydrogen burning. The second generation then formed from ejecta from first generation stars. However, this requires more first-gen stars, which is the opposite from observations. The nature of polluter is also uncertain."
+Describe a formation scenario for globular clusters. What evidence exists that a subset of the globular clusters have been accreted from external galaxies?,"1. Early Formation (High Pressure ISM): The high pressure ISM conditions present at high redshift naturally produced denser clusters during the initial phase of star formation. (cuz the universe was smaller? Idk why its higher pressure lol) (I think in high redshift the CMB causes the temperature to be higher. Assuming similar density this will lead to high Jeans mass → denser star formation?)
+2. Early Destruction These clusters were subject to intense destruction? Clusters were tidally disrupted by dense gas concentrations in the disks of these high-redshift galaxies. This process selectively removed most low mass clusters over time
+3. Migration to the Halo? Destruction continued until the surviving clusters migrated out of the disk (potentially driven by mergers? Idk what's going on) and entered the halo of their host galaxies. In the halo, they could evolve with a much lower probability of destruction since its less dynamically messy? (I guess so? In the disk the clusters will be slapped by spiral arms)
+Accretion Theory:
+Kinematic Linkage to Major Merger Events -> GES, some stars are linked to be from accreted stars I think?
+Metallicity and Age Sequences -> The comparison of globular cluster ages and metallicities reveals two sequences with one major sequence primarily found in the halo spans a branch extending from metal poor and old to metal rich and young. Diverse populations -> accretion of different stars and thus not SSP?"
+Compare and contrast the two formation scenarios for the bulge. What is the current consensus on how the Milky Way bulge formed? Explain your answer.,"The bulge is formed through (1) the early burst of star formation and (2) the secular evolution of the early disk. Observations suggest that the bulge is a mixture of both:
+There is a bimodal distribution in metallicity (alpha/Fe ratio). ONe explanation is that metal poor stars belong in the former scenario and metal rich stars belong in the later scenario. (Note: metal rich stars have low alpha/Fe ratio)
+Metal rich stars are kinematically cooler in vertical directions → as expected for stars originating from disk and entering the bulge through secular evolution (see MW bar in Q32)."
+Observations of the bulge: what do we learn about the formation of the bulge from the metallicity distribution? What about α/Fe ratios? What do kinematics and morphology of bulge stars tell us about the bulge’s formation? What do we know about the ages of bulge stars?,"Classical Bulge (formed quickly in an early burst) - This results in a chemically uniform, pressure-supported spheroid
+Pseudo-Bulge - The bulge structure results from the secular evolution (slow internal processes driven by a central bar) that brings disk stars into the central bulge
+Metallicity is broad and is observed to be potentially multimodal. The concentration of these metal populations varies vertically, with the metal rich sequence primarily found in the midplane indicating its potentially pseudo bulge? 
+Alpha/Fe: High Sequence: This corresponds to the metal poor stars. First results found that some bulge stars had large ratios, even larger than the thick disk at fixed metallicity. This is a strong indicator that this component formed rapidly via an early burst of star formation before the delayed iron enrichment from Type Ia supernovae began.
+Alpha/Fe: Low Sequence: This sequence corresponds to the metal rich stars. These stars formed later, after Type Ia supernovae had enriched the interstellar medium with iron, and are attributed to the secular evolution of the early disk.
+Kinematics and Morphology of Bulge Stars
+Barred Structure, Boxy/Peanut Shape, Long Thin Bar: There is evidence for a long thin bar evident in near-infrared star counts, with a half-length estimated at 5.0kpc
+Large alpha/FE Population (Old/Metal Poor): These stars have isotropic kinematics. This randomized motion is expected for a classical, pressure-supported spheroid or a population that has undergone substantial heating.
+Small alpha/FE Population (Younger/Metal Rich): These stars show a flatter distribution and are kinematically ""colder"" vertically. This is expected for stars that originated in the disk and were brought into the bulge by secular evolution.
+Cylindrical Orbits: The structure of the bulge itself supports this model, as its kinematics reveal cylindrical orbits, which are expected for X-shaped bulges
+Age: Younger/Intermediate-Age, Metal-Rich Population (Pseudo-Bulge Component), Old, Metal-Poor Population (Classical Bulge Component)"
+What evidence exists for the MW bar? What is the expected (rough) size scale of the bar?,The bar (non-axisymmetric structure) will create torque on stars and drive them inward. The stars also gain vertical energy (buckling instability) and lead to “boxy/peanut-shaped” distribution of stars in the central regions. NIR star counts suggests existence of MW bar with half-length ~5.0 kpc
+Have a rough idea of the mass and size of the nuclear star cluster. How does this compare to globular cluster masses? What do we know about the metallicity and ages of stars in the nuclear star cluster?,"Size (Radius): The NSC is found in the inner 5-10pc of the nuclear bulge.
+Mass: The measured dynamical mass of the NSC is 10^7 M_sun.
+Luminosity: The luminosity is 4 \times 10^7 L_sun
+The NSC is significantly more massive than the typical mass range of globular clusters (GCs)
+Young Stars: Despite the dominance of old stars, young stars do exist, such as the S stars found within $1 \text{ arcsec}$ of the SMBH
+Dominant Population (Old): Most stars in the NSC are old, with ages determined to be >5Gyr
+Implication: aiming to quantify what fraction of the NSC formed in-situ versus what fraction was assembled via infall (accretion)"
+"How is the MW rotation curve measured? Be sure you can describe techniques for R<R0 and R>R0. Sketch the rotation curve. What is the velocity at the solar radius? What is the implied total mass of the Milky Way? Motivate your choice of R and V, and assumptions that go into your mass calculation.","Observation of rotational curve:
+Traditionally: HI 21 cm line
+2000s: masers in high-mass star forming regions (2000s)
+Last decade: Gaia measurements (and additional spectroscopy for radial velocities)
+Techniques for determining rotation speed:
+R<R0: Tangent point method. For galactic longitude -90<l<90 (in degree), we look through the region with R<R0. Since the radial velocity is vR=R0(-0)l and  is a decreasing function of radius, the highest speed originates from the point of smallest radius R=R0l. Therefore, the inner rotation curve can be recovered from the maximum velocity at each l (traditionally this is from the HI intensity map).
+R>R0: Tracking stars or clusters of known distance (i.e., blue horizontal branch, K-giants, globular clusters) and known motions
+More recently: Gaia+APOGEE brute force
+
+Near Sun: R0=8.178 kpc ,V=229km/s, period220Myr .
+Total mass of MW: MV2R/G1012 M (if we take V200 km/s,R200 kpc.) Note that this assumes spherical symmetry (but the error is small compared to disk, only 10-15%)"
+Consider the motions of atomic hydrogen as  a function of Galactic longitude. Be able to describe the sign of Vr in different quadrants.,"1. Quadrant I (0< l < 90): Inner Galaxy
+In this quadrant, the line of sight passes through regions both closer to the Galactic Center (R < R_0) and farther away (R > R_0). So, HI gas is observed to have both positive and negative velocities with respect to the LSR.
+• Positive V_R (Approaching): The positive velocity gas corresponds to gas clouds located nearby at R < R_0. Since the inner galaxy rotates faster than the Sun (Omega > Omega_0), and sin l is positive, V_R is positive (approaching). The maximum positive velocity occurs at the tangent point, the location closest to the Galactic Center along that line of sight.
+• Negative V_R (Receding): The negative velocity gas comes from gas clouds on the opposite side of the Galaxy with R > R_0. Since the outer galaxy rotates slower than the Sun (Omega < Omega_0), and sin l is positive, V_R is negative (receding).
+2. Quadrant II (90 < l < 180): Outer Galaxy
+In this quadrant, the line of sight looks outward from the Galactic center.
+Only Negative V_R (Receding): The gas in this region is observed to be only negative in its velocity with respect to the LSR. This is because the line of sight only sees the far side of the galaxy with R > R_0. Since R > R_0, the angular speed \Omega is slower than the LSR speed (Omega < Omega_0). Both Omega - Omega_0 and sin l (in this quadrant) are positive, resulting in a negative radial velocity, meaning the gas is receding from the Sun
+For the other quadrants just flip the signs! "
+"What are rough values (within order of magnitude) of temperature and density of ISM phases? [Note, do not feel the need to memorize this, but please review these!]. How would you observe and characterize the different Milky Way ISM phases?","
+Observations:
+Molecular gas: Observe the molecule (CO, HCN, etc)
+Cold atomic gas: 21 cm line & fine structure metals ([CII])
+Warm atomic gas: HI absorption lines toward radio-bright AGN, emission from fine structure metals (i.e. [CII], [OI])
+Warm ionized gas: hydrogen recombination lines (i.e., H-alpha)
+Hot diffuse gas:  diﬀuse X-ray emission (free-free+line emission), absorption lines of ions such as OVI in spectra of background stars/QSOs
+1. Molecular ISM: The molecular phase is where star formation takes place.
+2. Cold Neutral Medium (CNM) and Warm Neutral Medium (WNM): These phases consist mostly of neutral atomic gas (H I).
+3. Warm Ionized Medium (WIM): The WIM is gas photoionized by hot stars.
+4. Hot Ionized Medium (HIM): The HIM is gas shock-heated by supernovae."
+What physical processes heat the neutral ISM? Explain each process. Which dominates?,"1. Photoelectric Heating by Dust: Heating occurs when a photon hits a dust grain and ejects an electron approx 10^{-26}erg/s
+2. Cosmic Ray Ionization: A Cosmic Ray hits an atom, ejecting an electron
+~ about 3 ionizations per Gyr, the corresponding heating rate is approximately 10^{-27}erg/s
+3. Photoionization of Atoms: A photon from a star hits an atom, ejecting an electron 1 ~1eV
+4. Shock heating SNe: Shock heating arises from propagating disturbances. 
+Bruh I hope we don’t need to know any more than this…. Ima kms if we do "
+"How is the neutral ISM cooled? Describe the physical processes that dominate cooling between 10 and 104 K, including discussion of collisionally-excited lines and HI Lyman alpha.","
+In general cooling through excitation of neutral atoms by collision with free electrons (from atoms with low ionization energy e.g. C, and dust)
+Close to 10^4 K, Hydrogen line cooling
+Lower temperature: Fine structure line cooling from [C II], [O I]
+n is density Lambda is cooling function and G is a constant heating terms given previously were in units of energy gain per second per particle.
+n^2 * Lambda = n*L propto n_e * n_a so Lambda propto n_a, where L is cooling per rate atom, n_e is the number density of free electrons, n_a is number density of atoms; n is the average number density of all particles"
+Describe how the energy level diagrams of CII and OI dictate the temperature dependence of their contribution to the ISM cooling curve.,"The distinct energy level splittings of CII and OI mean that CII dominates cooling in very cold gas (~ 100K) because its excitation energy is lower, allowing thermal motions to trigger the transition frequently. OI cooling is suppressed at these low temperatures due to its higher threshold energy, only becoming effective as the gas temperature increases.
+As temperature increases further, collisions can excite new and more efficient modes of cooling. For instance, at T ~ 10^4 K, collisional excitation of hydrogen (H Lyman alpha) takes over as a major coolant…"
+"What is the two-phase model of the (neutral) ISM? Given a plot of pressure vs density for (n, T) combinations that lead to thermal equilibrium, explain why there are only two stable phases in the neutral ISM. What are several shortcomings of this model?","Two-phase ISM is based on the thermal stability and cooling curve. In the region where the cooling function  increases very slowly with temperature, the instability develops. For high temperature (104 K) and low temperature (102 K), the ISM is stabilized by Lyman alpha cooling and fine-structure line cooling, respectively. In the intermediate temperature range the ISM is unstable due to the flat .
+(Intuition behind instability: For fixed pressure, increasing T means decreasing n. For constant  and G, n2 decreases faster than nG → the gas cannot cool and get heated up.)
+Shortcoming of the model: Cannot explain the hot phase (106 K) that dominates the volume (~45% of space)."
+What is the three-phase model of the ISM? Explain our current understanding of the origin of the warm and hot ionized phases.?,"1. Cold Neutral Medium: Consists of cold neutral clouds, characterized by low temperatures (T ~ 100 K) and relatively high densities (~30 cm^-3). This phase is one of the two stable thermal states identified in ISM equilibrium models.
+2. Warm Neutral Medium: Consists of warmer, diffuse neutral gas, with temperatures around T ~ 5000 K and lower densities ~0.6 cm^-3). This represents the second stable thermal equilibrium state.
+3. Hot Ionized Medium: Consists of very hot, low-density gas. This phase was introduced to explain the observed hot gas component. The HIM is characterized by extremely high temperatures T > 10^5.5K  and very low density ~0.004  cm^-3. The HIM is crucial because it dominates the volume filling factor of the ISM."
+"What do we know about gas in the CGM of the Milky Way? Your answer should include discussion of warm/hot gas and the HI high velocity clouds. What are plausible origins of the CGM gas?
+","Massive stars (and AGN activity) drive outflows of matter out of galaxies into the circumgalactic medium (CGM) and/or IGM. The balance between these outflows and inflows from the IGM/CGM (the so-called baryon cycle) regulates galaxy evolution.
+Possible origins of of hot/warm CGM gas:
+Hot gas vented from disk heated by supernovae explosions
+Gas accreted onto the Milky Way from the intergalactic medium
+HI high velocity clouds (V>90 km/s) may be gas that has been ejected from the disk,  some of which is now falling back to the midplane to fuel future star formation"
+*** Stellar collisions/encounters: strong vs. weak. Do strong encounters happen in typical stellar systems? Know how to set up an equation for strong-encounter radius and timescale for a strong encounter. Under what conditions do we consider stellar systems as collision- less?,"Strong Encounters: defined such that the change in potential energy is greater than or equal to the initial kinetic energy
+Weak encounters:  In a single weak encounter, the force is so small that the star's orbital path is hardly changed
+Setup derivation for Strong encounters:
+1. Define the system: Consider two stars, each of mass m, approaching one another with a relative speed V.
+2. Potential Energy (PE): The potential energy between two stars separated by a distance r is approximately PE ~ Gm^2/r.
+3. Kinetic Energy (KE): The initial kinetic energy of the system is KE ~1/2 m V^2.
+The Equation for r_s
+To find the strong-encounter radius (r_s), you set the change in potential energy equal to the kinetic energy: G m^2/r_s ~ 1/2 m V^2
+Rearranging this equation solves for the separation distance, r_s, required for a strong encounter.
+2. Setting up the Timescale for a Strong Encounter (t)
+The mean time between strong encounters (t) is found by calculating the probability that a target star, traveling through the stellar system, encounters another star within the radius r_s.
+Setup:
+1. Define the volume: Consider a star moving at relative speed V over a time period t. Any other star encountered within the strong-encounter radius r_s will cause a collision. This defines a cylindrical volume with radius r_s and length Vt.
+2. Volume calculation: The volume of this cylinder is: Volume = \pi r_s^2 V t
+3. Define density: Assume the number density of stars around the test star is n.
+The Equation for t
+The condition for one collision to occur in time t is when the number of stars in the collision volume equals one:
+n \pi r_s^2 V t = 1
+The mean time between strong encounters (t) can thus be derived by solving for t:
+t = 1/(n \pi r_s^2 V) very very large ~10^12-15 yrs?
+Strong encounters typically do NOT happen.
+Systems collisionless when gravitational influence on a star's orbit is primarily governed by the smooth, collective gravitational potential of the entire system, rather than frequent, sudden alterations caused by encounters with individual stars"
+"What is relaxation time? In what stellar systems is relaxation important? Be sure to understand how/why relaxation depends on properties of the stellar system in question (velocity, number density) and how this leads to relaxation mattering more for certain stellar systems (i.e., star clusters) than others (i.e., Milky Way).","Relaxation time is the time it takes for the star to change their velocity/orbit significantly due to gravitational encounter with other stars:
+trel3G2m2n .
+Sigma: velocity dispersion, m: mass of single star, n: number density, : Coulomb logarithm (usually ~10-20)
+
+For Milky Way: n is very low (solar neighborhood has n~0.1 pc^-3)
+For clusters: n is much higher (e.g., n~10^4 pc^-3)
+Derivation: define the impulse
+
+Define number of encounters 
+Relaxation is when （assumes velocity random walks）The cumulative effect of all weak encounters is found by integrating over all parameters 
+The Coulomb thing is the log of the ratios of bmax/bmin"
+*** What is the physical significance for the crossing time and free fall timescale for a stellar system? Know how to compute the freefall time within the Solar radius. Roughly what timescale do you find?,"Is crossing time just typical orbital period or actually r_c/ sigma_c? - defined as time for a star in the system to cross the length scale for the system: for disk ~ R/v_K; for globular cluster that is relaxed ~ R/sigma (by Virial theorem, ½ sigma^2 = ½ GM/R for isotropic system)
+free-fall timescale: is an important time scale for how long it takes for the system to “react” to change. These are physically: Gravitational Collapse, Orbital Motion Characterization, Gravitational Response Limit 
+t_ff = (G\rho)^{-1/2}
+Computing the Free-Fall Time within the Solar Radius
+1. Determine the Mass Interior to the Sun: Using the observed orbital velocity (V_c) and the Solar radius (R_0), the total mass interior to R_0, M(<R_0), must be calculated, typically assuming a circular orbit and spherical symmetry V_c^2 = GM/R_0
+2. Compute the Mean Density (\rho): The mass interior to R_0 is divided by the volume.
+3. Plug in to eq above
+Sun is ~200Myrs"
+"*** Know how to compute density distributions for simple spherical gravitational potentials using Poisson’s equation. Be able to compute circular velocity curves for simple spherical potentials. Have a general sense of how velocity curves differ with different density distributions (i.e., uniform density sphere, singular isothermal sphere, Plummer sphere).","In spherical coordinates,
+4G=1r2ddr(r2ddr) 
+Rotation curve: v2r=r2 =ddr=GM(r)/r2.
+Isothermal sphere: r-2,v=const
+Uniform density sphere: =const,vr
+Plummer sphere (=GM/r2+a2):
+Small radius: behave like a uniform density sphere (=const,vr)
+Large radius: behave like a single star  (r-5,vr-1/2)"
+"***In particular, be able to apply Poisson’s equation to the potential of a singular isothermal sphere. You would be given the gravitational potential and the equation for a Laplacian of the potential under assumption of spherically-symmetry. Derive the circular velocity for this potential. Why is this potential somewhat applicable to the dark halo?","Poisson equation:Isothermal Sphere
+Laplacian in spherical 
+All terms except for radial dependence drops because of symmetry
+We can crunch the values to get a density profile  and force balance gives gives us this which means circular velocity is the same as halo velocity.
+The Singular Isothermal Sphere potential is highly applicable as a model for the dark matter halo because it produces a flat rotation curve."
+*** Derive the gravitational potential at some radius r within a uniform sphere with constant density ρ. You would be given the equation for calculating the gravitational potential of spherically-symmetric systems in terms of the density.,"Uniform velocity: v2=r(d/dr)=const=v2(r/r0). 
+Uniform density: "
+"*** Using Newton’s laws, show that a stellar system that can be approximated as a homoge- nous sphere with constant density ρ and radius a has an equation of motion of a harmonic oscillator for radii less than a. What is the angular frequency? How is this related to dynamical time? What is the equation of motion outside the sphere?","Applying Newton’s Shell Theorem and Gravitational Force
+Shell theorem states we only need to care about enclosed mass
+So we have that the solve for the mass in terms of density assume constant density and then plug in and cancel out a radius which is harmonic oscillator with frequencyand the characteristic timescale derived from this potential is the dynamical time or crossing time. "
+"*** What is the virial theorem? When can it be used? How do you measure σr, the velocity dispersion? Assuming motions are isotropic, what is the total kinetic energy of the cluster? Be able to compute mass of globular clusters if given potential energy form (similar to in- class exercise).","Virial theorem: 2K+W=0
+K: Total kinetic energy of the system, W: Total potential energy of the system
+The virial theorem can be applied to a time-independent system (in a macroscopic sense, not single stars)
+The velocity dispersion (along the line of sight) r2 can be observed with the width of emission lines. Assuming isotropic motion, <v2>=3r2. Form Virial theorem, we have
+2K=3Mr2=-WGM2rM3rr2/G. (r is the radius of the system)
+The total mass can also be obtained from integrating the Poisson equation if the potential is given."
+What are integrals of motion? What quantities are integrals of motion in spherical and axisymmetric static potentials?,"Definition integral of motion: a function that has no explicit time dependence and is constant as a test mass moves along its orbit.
+1. Static Spherical Potential 
+• Specific Energy conserved: The total energy of a star (E), defined as the sum of its kinetic energy K and potential energy W, 
+• Specific Angular Momentum (j) conserved: The specific angular momentum (j) is an integral of motion for any central force, which includes all static spherical potentials. 
+2. Static Axisymmetric Potential
+• Specific Energy conserved
+• The z-component of Specific Angular Momentum (j_z) Because there is rotational symmetry (no acceleration in the \theta direction), the component of the specific angular momentum parallel to the axis of symmetry, j_z, is conserved."
+Stellar orbits in axisymmetric potentials. What is the epicyclic approximation? Sketch an effective potential and discuss implications for motions of stars in an axisymmetric potential. Sketch the epicycles that describe nearly-circular orbits. What is the orientation of motion in the epicycles and why?,"Epicyclic approximation: Consider two orbits A and B. A follows the circular motion while B is a small perturbation of A. In A’s frame B will appear to be moving in a clockwise ellipse around A.
+
+Effective potential: eff=+jz2/(2R2). jz: Specific angular momentum
+Origin of epicycles: Conservation of angular momentum demands that the stars move slower at larger orbits. So if B is at a larger radius of A, B’s motion will lag behind, and vice versa."
+*** What are the conditions for circular orbits in axisymmetric potentials? Derive an equa- tion for the radius Rg of circular motion for a logarithmic potential. Your answer should be in terms of jz and v0. You would be given the potential.,"For circular orbits it must:
+1. Conservation of Angular Momentum ($j_z$) (naturally true in axisymmetric potential)
+2. Vertical Equilibrium: A circular orbit typically lies in the midplane of the disk (z=0). 
+3. Radial Equilibrium (Force Balance): For a stable circular orbit, the radial acceleration (\ddot{R}) must be zero.  must be zero so  where R_g is the circular motion
+Isothermal sphere example: where angular momentum 
+Plug in and solve to get "
+Give a physical explanation for asymmetric drift taking into account epicycles and the radial density distribution of stars in the MW disk.,"Consider two points A and B near the solar neighborhood. Point A is closer to the galactic center and point B is further away from the galactic center, with the Sun in the middle of A and B. At the Sun’s location, there will be stars drifting from points A and B since the stellar motions are not perfectly circular. The star drifting from point A has smaller angular momentum than the Sun and therefore has a smaller velocity (another way to state this is that the epicycle motion is clockwise). By the same principle, the stars from point B have larger velocity. Since the galactic disk has a radial exponential profile, the solar neighborhood has more stars coming from A than B. This causes the asymmetric drift we observe. "
+What is the collisionless Boltzmann equation? What are the Jeans equations?,"This is the collisionless boltzmann equation: no changes in velocities arising from stellar encounters (ignore mutual interactions among the particles, i.e. stars)
+The boltzmann equation is the continuity equation for the phase space distribution (real space+velocity space, so have infinitely many velocity fields in real space) of stars
+Jeans equation: derived by calculating the moments of the Collisionless Boltzmann Equation (CBE), averaging over velocity space. The equations consist of the continuity equation (derived from the zeroth moment) and three versions of the momentum equation (derived from the first moment, j=1, 2, 3). They are the stellar dynamics equivalent of Euler’s equation in fluid dynamics
+
+The cross-terms are typically small for systems dominated by random motions since <v_iv_j>~0 as there is no correlation in different components, and <v_i>~0 in every direction, so sigma_ij^2 is dominated by sigma_ii^2~<v_i^2>"
+"Be able to use Jeans equations to determine the surface mass density in the MW disk and mass profile in star clusters. You would be given the Jeans equations in the form we showed in-class, but you should be able to follow steps to explain how to derive the mass density.",See the picture for the jeans equation Note that Phi is also a function of n through the Poisson equation. (or spherical symmetry -> phi = - GM(r)/r)
+Effects of two-body relaxation. Why does evaporation and mass segregation occur in clusters? How would it impact the stellar mass function of a given stellar system?,"Two-body relaxation is the process driven by the cumulative effect of distant, weak encounters. Relaxation marks the point where a star has accumulated enough weak encounters such that its total velocity change squared equals its initial velocity squared (V^2), causing the star to forget the initial conditions of its orbit. Relaxation eventually drives the velocity distribution of stars towards thermal, i.e. Maxwellian.
+Evaporation is the process by which stars gain enough kinetic energy through two-body relaxation to permanently escape the gravitational pull of the cluster. (maxwellian distribution has a high-velocity tail)
+Mass segregation refers to the dynamical effect where heavier stars sink towards the center of the cluster, while lighter stars migrate toward the outer regions.
+This happens because relaxation turns to drive each star to have the same energy, so massive star must have smaller velocity in the equilibrium state => has to sink inward due to gravity
+IMF Complication: Star clusters are often utilized for IMF measurements, but mass segregation means that the measured mass distribution (the present-day mass function) in the observed regions (especially the central core) may no longer accurately reflect the original, freshly-formed IMF"
+"Describe basic characteristics of dwarf irregulars, dwarf ellipticals, and dwarf spheroidals.","Dwarf Irregulars
+
+Characteristic
+Details
+Morphology
+No bulge and low mass starforming galaxies
+Gas
+Gas rich, large H1 mass / total mass compared to MW
+Star formation
+Star forming and is bursty nature and are inefficient at converting gas to stars
+Metallicity
+Low metallicity because of mass loading factor (outflow rate) needed for low mass galaxies result in lower fraction of baryons stored in stars
+Kinematics
+No flat rotation curve. H1 rotation curve show CORED inner halo density. Cusp core problem which deviate from LCDM
+Environment
+More common in less dense env
+
+
+Dwarf Elliptical Galaxies
+
+Characteristic
+Details
+Classification
+Early type galaxies, have smooth light distributions with roughly elliptical isophotes (isophotes are contours of same brightness)
+Luminosity
+Lower Luminosity end of early type galaxies from 10^7 - 10^9 L_sun. They are less luminous than midsize ellipticals and giant 
+elipticals
+
+
+Dwarf Spheroidal Galaxies (includes UFDs)
+
+Characteristic
+Details
+Morphology
+Spheroidal morphology and low luminosity and very low surface brightness. Most satellites are dwarf spheroidals. M= -1 to -14
+Stellar pop and Gas
+Old metal poor stars and no ISM
+Subtypes
+Classical Dwarf spheroidal have been observed in SDSS. UFD revealed in SDSS are extremely faint 
+Star formation history
+Classical dwarfs assembled their stellar mass in a series of bursts. UFD are older than REIONIZATION EPOCH. Forming stars during that time and not stop until after reionization. 
+Metallicity
+Very low metallicities. UDFs are the most metal poor ones
+Chemical ev
+No gas but low metallicities cannot be explained by the closed box model. (Which predict higher metallicities for quenched systems) More like a leaky box model, which includes outflows of metals via feedback due to weak grav potential
+Quenching
+Lack of H1 gas within the virial radius of the MW suggests environmental effects like ram pressure stripping by the hot gas within the halo CGM 
+Dark Matter
+UFDs have very low line of sight dispersions, 2-8km/s and their dynamical mass to light ratios are much larger for an old population of stars and show they are very dark matter dominated. 
+
+"
+How are dynamical masses of dwarf spheroidals determined? What is the mass - velocity anisotropy degeneracy?,Use line-of-sight velocity dispersion of stars and Jeans equation. The velocity anisotropy degeneracy means that we cannot confidently convert the line-of-sight velocity dispersion to total velocity dispersion if the velocity dispersion is not isotropic (unknown anisotropy parameter beta). This creates uncertainty in the mass measurement.
+What do metallicities and α/Fe-ratios tell us about the assembly of the dwarf spheroidals?,"Low metallicities indicate significant gas loss (outflows) due to shallow gravitational potentials, supporting ""leaky box"" models,. α/Fe ratios measure formation duration: high ratios in Ultra-Faint Dwarfs imply rapid quenching before Type Ia supernovae produced iron, whereas lower ratios in Classical Dwarfs indicate extended star formation histories."
+* Derive the metallicity Z(t) under the assumptions of the closed box model.,"Let M_g be the gas mass in the galaxy, M_h be the mass of heavy elements (metals), so that Z=M_h/M_g; dZ=dM_h/M_g - M_h/M_g^2 * dM_g.
+Let dM_s=-dM_g be the mass of star formed, and assume p fraction of the stellar mass is converted into metals (i.e. metallicities of the star; yield) by stellar evolution and instantaneously recycled into the ISM (the gas), so the change in metal mass associated with the star formation is the sum of metals stars recycled into the ISM and the metals consumed to form the star:
+dM_h = (p-Z) * dM_s= (Z-p) * dM_g
+Now we have:
+dZ=(Z-p) * dM_g/M_g - Z*dM_g/M_g = - p* dM_g/M_g
+Solve the above => Z-Z(0)=-p * ln(M_g(t)/M_g(0))  =  p * ln(M_g(0)/M_g(t))"
+What are the successes of the closed box model? Which stellar systems does the closed box model fail to explain?,"Successes: The closed box model helps explain why gas-rich dwarf irregular galaxies have lower metallicities, as it correctly predicts that systems with high remaining gas fractions should be less chemically enriched. Also because of instantaneous formation assumption means the gas instantly gets recycled locked in stars.
+Failures: The model fails to explain dwarf spheroidals. Since these galaxies contain almost no gas, the closed box model predicts they should be extremely metal-rich; however, they are observed to have very low metallicities, indicating they lost gas through outflows rather than consuming it"
+What motivates usage of the leaky box chemical evolution model? What is the mass loading factor and how does it impact the metallicity of a stellar system?,"See question 5; mass loading factor is the ratio between outflow mass and mass of the formed star in a given period, eqv ratio of M_dot for outflow and M_dot for stellar formation: eta=dM_out / dM_s; assuming the mass outflow rate is directly proportional to the SFR is the key assumption.
+It will apparently reduce the metallicities as metals can escape with outflow."
+Explain the physical processes that quench star formation in dwarf galaxies during reionization. Which observations of dwarf galaxies can be explained by this reionization feedback?,"Physical Processes Reionization heats the intergalactic medium to ∼10^4K, raising its thermal pressure. This suppresses star formation through two main mechanisms:
+Halted Accretion: The increased pressure prevents gas from accreting onto dark matter halos with masses below ∼10^9m
+Photoevaporation: For existing gas in halos below ∼10^8m_sun, the thermal pressure exceeds the gravitational binding energy, causing the gas to evaporate into the intergalactic medium.
+Observations:
+Missing Satellites: This suppression explains why fewer luminous dwarf satellites are observed than predicted by dark matter simulations; many low-mass halos remain dark.
+Fossil Galaxies: It explains why Ultra-Faint Dwarfs (UFDs) contain uniformly old stellar populations, indicating they quenched during the reionization epoch (z∼6)
+Low Baryon Fractions: It accounts for the extremely low stellar-to-halo mass ratios observed in dwarf galaxies."
+* What role does supernova feedback play in quenching dwarf galaxies? Review quantitative exercise we did in class to compare energy output of supernovae and binding energy of gas.,"Supernova drives outflow and photo-ionization of gas, but insufficient to quench the dwarf galaxies
+Quantitative: energy released by SNe ~ 10^51 erg per explosion; about eta~0.01 of stars become SNe, and assume each star deposit epsilon ~ 0.1 fraction of energy into the ISM; for dwarf galaxies the total mass of stars M_* ~ 10^4 M_sun, so the total number of SNe ~ eta*M_tot / M_sun ~ 10^2; so the total energy deposited into the ISM E_SNe ~ 10^52 erg;
+We can compare this with the binding energy of the ISM gas: E_bind ~ G M_tot * M_gas / R where M_gas ~10^6M_sun, M_tot ~ 10^9 Msun, R~0.5pc, so E_bin ~ 10^53 erg >> E_SNe"
+What is environmental quenching? How does environmental quenching impact dwarf galaxies as they become satellites? What observations support the importance of environmental quenching for dwarf galaxy evolution?,"Definition Environmental quenching star formation driven by external stuff, such as ram pressure stripping, galaxy harassment (dynamical friction), or starvation and not rather internal feedback processes.
+Impact on Satellites: As dwarf galaxies enter a massive host's hot halo, ram pressure stripping occurs when the pressure from the surrounding hot gas exceeds the dwarf's gravitational hold, stripping away the cold interstellar gas required for star formation.
+Observational Support Surveys of the Local Group reveal a stark contrast: dwarf satellites located within the virial radius of the Milky Way or M31 almost universally lack neutral hydrogen (HI) and are quenched, whereas isolated dwarfs outside these radii remain gas-rich"
+What do observations reveal about the star formation histories of dwarf galaxies? Compare and contrast the inferred star formation histories of classical and ultra-faint dwarf spheroidals. Provide a physical explanation of the differences.,"The stars in UFDs are extremely old and were built up at an earlier time compared to the classical dwarfs. Even though the classical dwarfs also have old stellar populations, their star formation history can show more recent bursts. This is because the UFDs have shallower gravitational potential well and are particularly susceptible to the reionization feedback (stop of gas accretion and photoevaporation) and ram pressure stripping."
+Dark matter and dwarf galaxies: What is the missing satellites problem? What is the cusp- core problem? What is the too-big-to-fail problem? Explain how observations and theory have altered our understanding of each of these problems.,"Missing satellites problem
+We saw too few satellite galaxies compared to the prediction from Lambda CDM model
+Solution: Deeper observations have now allowed detection of these faint satellites (they are not missing)
+	Cusp-core problem
+Rotational curve measurement of dwarf irregular galaxies shows a cored density profile instead of the cusp predicted from the cold dark matter model (NFW profile).
+Potential solutions
+Different natures of dark matter
+Baryonic feedback: SN explosion can rapidly change the gravitational potential and may heat up the dark matter particles (unclear if this is enough to explain observation, though) 
+Too big too fail problem
+Simulations predict multiple dense and massive sub-haloes in Milky Way-like galaxies that have formed stars (Vcirc~20-50 km/s; too big to have failed at forming stars). Yet they are not observed
+Potential solution
+Dynamical friction causes the most massive halos to lose orbital energy faster and sink to the center of the potential → smaller pericenter and stronger tidal interaction
+Luminous satellites experience significant mass loss from tidal interactions with the disk"
+"Describe the different disk spectral types (i.e., Sa, Sb, etc.), including S0 galaxies. How do properties (i.e., color, luminosity, mass, gas content) differ in the various spectral types? How (and why) do rotation curves differ? Explain implications for how the formation history of disk galaxies as a function of their mass.","• S0 (Lenticulars): These galaxies possess smooth light distributions and are bulge-dominated but lack the distinct spiral arms of later types. They are often considered ""early-type galaxies"" alongside ellipticals.
+• Sa/Sb (Early-type Spirals): These systems have large, prominent bulges and are considered bulge-dominated disks.
+• Sc/Sd (Late-type Spirals): These galaxies have small bulge-to-disk ratios, are disk-dominated, and feature more open spiral arms.
+Trends in Physical Properties Moving along the sequence from early-type disks (S0/Sa) to late-type disks (Sd) reveals clear trends in mass, luminosity, color, and gas content:
+• Luminosity and Mass: Bulge-dominated galaxies (Sa/Sb) are generally more luminous and massive than disk-dominated galaxies (Sc/Sd). Galaxy sizes typically scale with stellar mass, meaning massive galaxies are physically larger.
+• Color: As the bulge-to-disk ratio decreases (from S0/Sa to Sd), galaxies become bluer. This is because the central bulge is dominated by older, redder stars, while the disk contains younger, blue stars formed in spiral arms.
+• Gas Content and Efficiency: While spirals are generally rich in neutral hydrogen (HI), the ratio of HI mass to luminosity  is lower for brighter, more massive galaxies (Sa/Sb). This indicates that massive, high-surface-brightness galaxies have been more effective at converting their gas reservoirs into stars compared to lower-mass, gas-rich systems.
+Rotation Curves The distribution of mass within these galaxies dictates their rotation curves, which trace the circular velocity of stars and gas as a function of radius.
+• Sa Galaxies: The rotation curve rises very rapidly in the center. This is due to the large concentration of mass in the central bulge, which dominates the gravitational potential at small radii.
+• Sc Galaxies: Because they have smaller bulge-to-disk ratios, the rotation curve rises more gently in the solid-body regime.
+• Flatness: In both cases, the rotation curves flatten out at larger radii (beyond 10–40 kpc), indicating that dark matter halos dominate the mass in the outer regions.
+• Tully-Fisher Relation: There is a tight correlation where brighter galaxies rotate faster (L∝v^alpha ). This implies that the stellar content (luminosity) is directly related to the total dark matter mass (rotation speed).
+Implications for Formation History The differences in structure and kinematics provide insight into how disk galaxies assembled over cosmic time.
+• Bulge Formation: The massive bulges in Sa/Sb galaxies are likely ""classical bulges"" formed through early mergers, which drive gas to the center and spark starbursts. In contrast, the small central spheroids of lower-mass galaxies are often ""pseudobulges"" formed via secular (slow) evolution of the disk.
+• Star Formation Efficiency: The lower gas-to-light ratios in massive disks suggest they were highly efficient at processing gas into stars early on. This aligns with ""downsizing,"" where massive galaxies form their stars first and fastest, while lower-mass systems continue to form stars inefficiently over longer timescales.
+• Environmental Quenching: The existence of S0 galaxies, which are often found in clusters, suggests that environmental effects like ram pressure stripping transformed gas-rich spirals into gas-poor lenticulars by removing the fuel for future star formation"
+How is the HI mass of a galaxy measured? How is the molecular gas mass measured? How are stellar masses measured? What assumptions go into these calculations?,"HI: 21cm
+Molecules: CO
+Stellar mass: SED fitting"
+"Describe the primary process by which molecules are formed in the ISM. Explain why molecules are seen only at densities sufficient for self-shielding.
+","Formation: Molecules form via grain catalysis, where atoms adhere to the surface of dust grains, migrate until they meet, and bond. The energy released by this chemical bond formation unbinds the new molecule from the dust grain, returning it to the gas phase.
+Self-Shielding: Molecules are observed only at high densities because UV radiation easily destroys them (photodissociation). The gas must be dense enough for its outer layers to absorb the radiation, protecting the molecules inside"
+How is the dust mass of a galaxy inferred? What are the different tracers of dust in galaxies? What is the typical dust to gas ratio? What is the characteristic (or half-mass) grain size?,"	extinction , reddening, Balmer decrement(luminosity ratio of H_alpha / H_beta, H_beta attenuated more by dust extinction)
+Typical dust-to-gas ratio: 0.01 (think of metallicity of the sun, ~0.5 of metals are in dust)
+Size: 0.1 micron"
+Dust extinction curves: what is the basic form in the Milky Way and LMC? What physical differences may lead to variations?,"1. The Basic Form: Milky Way
+• General Shape: In the Milky Way, the curve rises toward shorter wavelengths, meaning dust blocks ultraviolet (UV) and blue light much more efficiently than red or infrared light.
+• The 2175 angstrom Bump: A prominent feature of the Milky Way curve is a broad absorption ""bump"" located at 2175 Å in the ultraviolet.
+• Parameterization (R_V): The slope of the curve is typically described by the ratio of total extinction to selective extinction (reddening, E(B−V)), 
+2. The LMC and Variations
+While the Milky Way serves as a baseline, extinction curves vary across different galaxies and environments.
+• Metallicity Differences: The Large Magellanic Cloud (LMC) has a metallicity of approximately 0.5Z while the Small Magellanic Cloud (SMC) is around 0.3Z 
+• Dust-to-Gas Ratio: In lower metallicity star-forming galaxies like the LMC and SMC, the dust-to-gas ratio is significantly lower up to 100 times lower than in the Milky Way. This scarcity of metals fundamentally changes the available material for grain formation, which alters the optical properties and shielding capabilities of the dust.
+• Curve Variations: The sources note that different galaxies exhibit different extinction curves. While the specific shape of the LMC curve is not detailed in the text, the variation is driven by the environmental factors described below.
+3. Physical Causes of Variations
+The variations in the extinction curve whether flattening, steeping, or lacking features like the 2175 angstrom bump are caused by physical differences in the grain size and composition.
+A. Grain Size Distribution The interaction between light and dust depends on the grain size relative to the wavelength of light.
+• Small Grains: An abundance of small grains leads to a steep rise in extinction in the UV.
+• Grain Growth in Dense Regions: In dense molecular clouds, grains often coagulate (stick together) to form larger particles. This results in a ""flatter"" extinction curve with a higher R V value (e.g., R V ≈5). Large grains scatter light more neutrally (gray extinction), making the reddening effect less pronounced compared to the total extinction.
+• Destruction: Conversely, shocks and high-energy collisions (sputtering and shattering) can break large grains back into smaller ones, steepening the curve.
+B. Composition The chemical makeup of the grains determines specific spectral features.
+• Depletion: Dust is formed from metals that have condensed out of the gas phase. Refractory elements like Silicon (Si), Iron (Fe), and Calcium (Ca) are highly depleted (10–1000x lower in gas than solar values), meaning they are locked into dust grains,.
+• Grain Types: The two main components are silicates (approx. 75% of mass) and carbonaceous solids (approx. 25%), including graphite and amorphous carbon,.
+• PAHs: Polycyclic Aromatic Hydrocarbons (PAHs) are responsible for specific infrared emission features and likely contribute to UV absorption features like the 2175 angstrom bump. Variations in the abundance of carbon-rich grains versus silicate grains often tied to the galaxy's star formation history and metallicity will alter the strength of these features."
+Describe the primary source and mechanism by which dust is produced and delivered to the ISM. What explains why some elements are depleted and others not? Describe the physical processes that lead to destruction of dust.,"Very extended and cool envelopes of AGB stars, dust can condensate from gas
+Depletion: some elements with higher condensation temperature condensates first when the gas cools and gets trapped in solid form, others remain in gaseous form
+Destruction: (shattering, astration, sputtering) collision with other grains & ions, sublimation, consumed by newly forme star"
+"Under the assumption of ionization balance, define the Stromgren radius. How and why does it vary with the density of ionized gas?","Definition The Strömgren radius is the specific distance from a star where the rate of photoionization exactly balances the collisional de-excitation and stimulated emission.
+Variation with Density The radius decreases as the gas density increases (R prop n ^−2/3).
+Why? Recombination occurs when electrons collide with protons, a process that scales with the density squared (n^2 ). In denser gas, these collisions happen more frequently, consuming the star's supply of ionizing photons within a smaller volume"
+Familiarize yourself with the ways in which the energy levels of atoms/ions are populated/de-populated. Explain the concept of critical density.,"(can assume radiation is negligible)
+Ways to populate higher energy levels: absorption, collisional excitation
+Depopulate: spontaneous emission, stimulated emission, collisional de-excitation
+Critical density: the density at which collisional de-excitation balances with spontaneous emission, larger density implies collisional de-excitation dominates"
+Describe (at least) three different techniques for measuring star formation rates in galaxies.,"1. Recombination Lines (e.g., Hα Emission)
+This method measures the ""instantaneous"" star formation rate by tracking the most massive, short-lived stars.
+• The Mechanism: Young, massive stars (O and B types) emit high-energy photons that ionize the surrounding neutral hydrogen gas, creating HII regions. As the electrons recombine with protons, they emit specific spectral lines, such as Hα (Balmer alpha) in the optical.
+• The Physics: The luminosity of recombination lines is linearly proportional to the rate of ionizing photons produced by the stars. Because these massive stars have short lifetimes, Hα emission traces star formation that occurred only within the last ~10 million years.
+• Calibration: Stellar population synthesis models are used to convert the observed Hα luminosity into a star formation rate (typically yielding ∼10^53 ionizing photons per second for every solar mass of stars formed per year).
+• Challenges: The observed line flux must be corrected for dust reddening. This is often done using the Balmer decrement, which compares the ratio of Hα to Hβ flux against the theoretical ratio expected from quantum mechanics.
+2. Ultraviolet (UV) Continuum
+This technique measures the direct light from young stars but covers a longer timescale than recombination lines.
+• The Mechanism: The far-UV continuum is powered primarily by O and B stars. By measuring the luminosity density in the UV, astronomers can infer the mass of stars formed.
+• Timescale: Because it includes emission from B stars (which live longer than O stars), the UV continuum is sensitive to star formation over the previous ~100 million years.
+• Challenges: The UV is highly susceptible to dust attenuation. Dust grains absorb UV photons efficiently, meaning significant corrections are required to get an accurate SFR. If a galaxy is very dusty, the UV method alone will drastically underestimate the star formation.
+3. Far-Infrared (FIR) Continuum
+This method measures star formation that is obscured by dust, often serving as a complement to UV measurements.
+• The Mechanism: Dust grains in the interstellar medium absorb the UV and optical light emitted by young stars. The dust heats up and re-radiates this energy as thermal emission in the far-infrared.
+• Reprocessed Light: The FIR emission is essentially ""reprocessed"" starlight. In dusty ""starburst"" galaxies, almost all UV light may be blocked, making the FIR luminosity a primary indicator of the total star formation rate.
+• Energy Balance: Modern techniques often use energy balance methods (such as CIGALE or MAGPHYS). These fit stellar population models to both the UV/optical emission (unobscured star formation) and the FIR emission (obscured star formation) simultaneously to derive a total SFR."
+How are Balmer line ratios used to infer dust reddening?,"H_beta has shorter wavelength, hence more attenuated by dust"
+How can emission lines be used to infer the electron temperature and electron density? Your answer should include a sketch of an energy level diagram.,"Electron Temperature (T) Temperature is inferred using the ratio of auroral to nebular emission lines (e.g., in [OIII]). Populating the highest energy levels (Level 2 in the sketch below) requires high-energy collisions, which occur more frequently in hotter gas. Therefore, a higher flux ratio of the auroral line (4363 Å) to the nebular lines (4959, 5007 Å) indicates a higher electron temperature.
+Electron Density (n) Density is measured using the ratio of a line doublet (e.g., [OII] at 3726 Å and 3729 Å) where the two upper levels have nearly identical energies but different critical densities. As gas density rises, collisions de-excite the atoms before they can emit photons; because the two levels have different density thresholds for this collisional de-excitation, their intensity ratio changes as a function of density"
+Describe how gas-phase metallicities are determined. Describe both the direct temperature method and strong line methods.,Oxygen II + III luminosity calibrated to gas-phase metalicities
+The CGM contains a significant reservoir of metals. How do these arrive in the CGM? Do lower mass galaxies place a larger fraction of their metals in the CGM? Connect your answer to the leaky box model and think about connections to the mass metallicity relationship.,"• Origin of Metals: Metals arrive in the Circumgalactic Medium (CGM) primarily through stellar feedback, where mechanical energy from supernovae and stellar winds drives outflows that eject enriched gas from the galaxy. In elliptical galaxies, this also involves ejecta from evolved stars and Type Ia supernovae heating the gas.
+• Mass Dependence: Lower mass galaxies place a larger fraction of their total metal budget into the CGM than massive galaxies. While a galaxy with 10^10msun retains some metals, placing ∼30−40% in the CGM, dwarf galaxies are far less efficient at retaining chemically enriched gas.
+• Leaky Box and MZR: This behavior is described by the leaky box model, which modifies the closed box scenario by allowing material to escape via outflows. To explain the observed Mass-Metallicity Relationship where lower mass galaxies have significantly lower internal metallicities models require the mass loading factor (eta) to be higher in dwarf galaxies. Due to their shallower gravitational potentials, dwarf galaxies easily eject their metals, keeping their internal metallicity low while enriching the CGM"
+What is the mass metallicity relationship? What does it tell us about how the galaxy formation process varies with mass? Your answer should describe predictions on how the gas fraction + mass loading factors + CGM metal budget vary with mass.,"In star forming galaxies, the metallicity increases with the stellar mass. This implies that galaxies of smaller mass are worse at retaining their metals. The low metallicity in lower mass galaxies can be explained by the higher gas fraction and larger mass loading factor. The larger mass loading factor also means that the CGM of low-mass galaxies has a larger metal budget (fraction)."
+* What is the Tully Fisher relationship? Be able to derive a relationship between L and v using the virial theorem (following your homework).,"Tully Fisher: a relation between luminosity and max orbital velocity (flat rotation curve, so well-defined) of spiral galaxies: L propto v^alpha, with alpha color dependent
+Simple derivation: By Virial theorem, v^2 ~ G*M/h_R, where h_R is the scale radius for light profile,  using the intensity profile: I(R)=I(0)exp(-R/h_R), we can integrate to find L=int_0^infinity 2*pi*R*dR * I(R) = 2pi h_R^2 I(0) => L propto h_R^2 (assuming I(0) constant)
+Then we assume constant M/L ratio, so M propto L propto h_R^2 => v^2 propto h_R, eqv L propto v^4"
+Compare/contrast the star formation surface density vs gas density when including (i) HI + H2 gas and H2 only. Explain the differences at low gas density.,"At high surface gas density, there is a tight correlation between the total gas (HI+H2) density and SFR density. This is the Kennicutt-Schmidt law. However, as we go lower total gas densities, we find that the SFR becomes much lower than what the relation predicts. The relation can be re-established if we only compare the molecular gas density and SFR density. This implies that there is a fixed efficiency of converting the H2 gas into stars, but a much lower efficiency of converting atomic gas into molecular gas. This inefficiency of HI→H2 can be explained by the lack of self-sheilding at low gas densities."
+How (and why) does galaxy metallicity impact the total gas depletion times? How do depletion times vary in star forming galaxies?,"1. Why Metallicity Matters: 
+Stars only form inside dense, cold clouds of molecular gas, not loose atomic gas (HI).
+•  Dust grains act like ""meeting spots"" for atoms to find each other and bond into molecules. Dust also shields which protects these molecules from being destroyed by UV.
+• Low Metallicity = Hard to Start: Low-metallicity galaxies have very little dust (because dust is made of metals). Without dust, it is very difficult to turn their raw gas (HI) into star-making fuel
+• The Result: Even if a low-metallicity galaxy has a lot of total gas, it takes a very long time to convert that gas into stars because the ""assembly line"" is broken. It is inefficient.
+2. Variation in Galaxies: Slow vs. Fast Burn
+The ""depletion time"" is how long it would take a galaxy to use up all its existing gas at its current speed of star formation.
+• Normal Spiral Galaxies (Slow Burn): These galaxies slowly turn their molecular gas into stars over about 2 billion years. This timescale is remarkably consistent for most normal galaxies.
+• Starburst Galaxies (Fast Burn): These are often galaxies crashing into each other. The collision smashes gas together to huge densities. This forces stars to form much faster, burning through the gas supply in just 100 million years "
+What do observations reveal about the efficiency of the star formation process? Describe how this is characterized in terms of the ratio of the free fall time and depletion time.,"The star formation process is extremely inefficient. This can be quantified by the ratio of free-fall time to depletion time. The typical number is ~0.01, meaning that only 1 percent of the gas mass in the molecular clouds gets converted into stars in 1 free-fall time."
+What evidence exists that turbulence plays an important role in pressure-support of GMCs? How might turbulence limit the efficiency of star formation?,"Supersonic Line Widths: When observing the CO emission lines used to trace molecular gas, astronomers find that the line widths are significantly broader than can be explained by thermal broadening alone. The fluid motions within these clouds are highly supersonic, exceeding the isothermal sound speed expected from the gas temperature (typically ∼15 K).
+• Larson's Laws: The velocity dispersion of the gas scales with the size of the cloud (L) according to a power law relation. indicates that the broad line widths are driven by a cascade of turbulent motions rather than random thermal noise.
+• Pressure Support: Because these turbulent velocities are supersonic, they provide the dominant internal pressure support that prevents the entire cloud from undergoing immediate gravitational collapse.
+Turbulence limits star formation efficiency by providing internal pressure support that prevents the Giant Molecular Cloud from collapsing globally under its own gravity,.
+It generates a log-normal density distribution, effectively keeping the vast majority of the gas at low densities where it remains stable. Consequently, star formation is restricted to only the rare, highest-density pockets of gas that can overcome this turbulent pressure"
+Are GMCs long-lived? What processes might destroy them?,"GMCs are not long-lived, with a typical lifetime of 10-30 Myr. Feedbacks form massive stars (photoionization, stellar winds, supernovae) may contribute to their destruction"
+Explain qualitatively how global feedback-regulated models explain the star formation law.,"Global feedback-regulated models describe the star formation law as a result of a vertical force balance in the galaxy disk:
+1. Gravity tries to compress the gas.
+2. Turbulent Pressure (driven by feedback from massive stars) tries to expand it.
+If gravity dominates, gas collapses into Giant Molecular Clouds (GMCs), increasing the star formation rate. This generates more feedback, which boosts the turbulent pressure. If pressure dominates, the disk expands and stabilizes. Star formation slows down, reducing feedback until the turbulence decay
+Law: The disk self-regulates to a stable state (Toomre Q∼1) where these forces are equal."
+Spiral arms: what is the winding problem? Explain several proposed mechanisms that might explain the origin of spiral arms in galaxies.,"If the spiral arm is tied to fixed populations of stars and gas, the spiral arms will be tightly winded (small pitch angles) within several orbital periods. This is inconsistent with the observation. Two solutions have been proposed:
+Density wave theory: the spiral arms are density waves propagating in the disk, and are places for GMC and star formation. Those spiral arms are long-lived structures.
+Swing amplification: self-gravity of collapsed GMC acts to amplify the density, with spiral forming from combination of epicyclic motion and diﬀerential rotation"
+How do the properties of ellipticals vary with stellar mass? What does this say about differences in formation histories?,"	We can infer the color-mass relation from color-luminosity relation based on stellar population synthesis models, elliptical galaxies with larger stellar mass are more luminous and redder;
+There are two branches in the elliptical galaxy population: low stellar mass, blue, dwarfs and high mass redder giants
+Dwarfs formed from dark matter halo; the giants are product of multiple generations of mergers: first gas rich merger to form the red nuggets (compact elliptical), then assemble into massive ellipticals through dry merger"
+What do the absorption lines in elliptical galaxies tell us about their physical properties?,"• Stellar Populations: They allow astronomers to determine the age and metallicity of the stars, breaking the ""age-metallicity degeneracy"" (e.g., using Balmer lines for age and Mg/Fe lines for abundances),.
+• Kinematics and Mass: The Doppler broadening of these lines (velocity dispersion) indicates whether the galaxy is dominated by rotation or random motions and allows for the calculation of total mass via the virial theorem.
+• Formation History: Ratios such as [Mg/Fe] measure α-enhancement, which indicates how quickly the galaxy formed its stars"
+"How are post starburst (or K+A, e+A) galaxies selected?",Selected based on spectrum: the spectrum of the old stellar population (K star) and newly formed star (A type) are distinguishable in their spectrum
+What is the UV upturn in elliptical galaxies? What is its physical origin?,"Its physical origin is attributed to old, hot, low-mass stars rather than young massive stars. Specifically, it is caused by extreme horizontal branch stars (helium-burning cores with thin hydrogen envelopes) and post-AGB stars (hot cores exposed after their envelopes are expelled)"
+Describe scaling relations for elliptical galaxies. Color magnitude relation? Faber-Jackson relation? Kormendy relation? Fundamental Plane? Can the correct form of the Fundamental Plane be derived from the Virial theorem? What is the tilt of the Fundamental Plane?,"Color magnitude: brighter ⇔ redder, older stellar population
+Faber-Jackson: eqv to Tully-Fisher relation for elliptical galaxies, i.e. replacing orbital speed with velocity dispersion: L propto sigma^4, derivation similar to Tully-Fisher, need to assume constant M/L and central intensity I(0)
+Kormendy relation: R_e propto <I>^-0.83, where R_e is the half-light radius, and <I> is the average intensity within R_e;  implies larger ellipticals are less dense
+Fundamental plane: combining F-J and Kormendy relation: R_e propto sigma^1.2 * <I>^-0.8
+	Can be derived from virial theorem with the additional assumption that M/L propto M^0.25
+Tilt in the 3D parameter space R_e, sigma, <I> given by the scaling relation"
+Compare the properties of disky and boxy elliptical galaxies (different shapes of isophotos).,"Disky:mid-size, slightly faster rotating (as slightly smaller <q>)
+boxy: most luminous/massive, triaxial, strong radio & x-ray emission"
+What are typical surface brightness profiles for elliptical galaxies? How do these differ in disk galaxies?,"Elliptical galaxies typically follow a Sersic profile with a high index (n≈4, also known as the de Vaucouleurs R^¼ law), characterized by a steep central rise and extended outer envelope. Luminous ellipticals often feature flat central cores, whereas midsize ellipticals have steep central cusps.
+In contrast, disk galaxies follow a simpler exponential profile (Sersic index n=1)"
+How do the end-products of dissipational and dissipationless mergers differ?,"Dissipation (gas rich): more compact and round, can spark star formation as radiation dissipates energy (=> gas can cool and fall to the center); also produce central cusp density profile; higher rotation rate
+Dissipationaless: cannot spark star formation, slow rotation rate"
+Describe a plausible formation scenario for a luminous elliptical galaxy. Your answer should discuss dissipational and dissipationless mergers.,"A plausible formation scenario involves a two-phase process:
+1. Dissipational (Gas-Rich) Merger: First, gas-rich galaxies merge. The gas cools and collapses to the center, triggering a starburst and forming a compact, high-density core (eventually transitioned to ""red nugget"") which is eventually quenched.
+2. Dissipationless (Dry) Merger: Later, the galaxy grows via mergers with gas-poor galaxies. These events increase the galaxy's size and mass without forming new stars, creating the extended envelopes, boxy isophotes, and slow rotation typical of luminous ellipticals"
+What is known about the gas and dust in elliptical galaxies?,"Do contain cold (molecular+atomic) gas and dust but very little relative to the stellar mass (compared to SFGs), likely have external accretion origin"
+Describe four techniques for measuring the mass of elliptical galaxies.,"1. The Virial Theorem: This estimates mass by relating the kinetic energy of stars (measured via velocity dispersion) to their gravitational potential energy. The tensor virial theorem is used to account for rotation and shape.
+2. Dynamical Modeling: This method traces the gravitational potential using detailed maps of stellar or gas kinematics (rotation and dispersion). It often employs the Jeans equations to account for orbital anisotropy.
+3. X-Ray Gas Analysis: This assumes the hot halo gas (10^7 K) is in hydrostatic equilibrium, where outward thermal pressure balances inward gravity. The total mass is calculated using the observed gas temperature and density profiles.
+4. Gravitational Lensing: This derives mass by measuring how the galaxy's gravity distorts light from background sources. The angular size of the resulting ring or arc (the Einstein radius) is directly proportional to the enclosed mass."
+What are box orbits? How might central black holes impact stars on box orbits?,"Orbit on which AM is not conserved along any axis, can be arbitrarily close to the center; so stars can have close encounter with the central BH and get ejected to larger radii: this tend to remove stars near the center, and contribute to the inner core"
+"Compare and contrast properties (virial mass, virial radius, velocity dispersion) of groups and clusters.","1. Virial Mass and Radius
+• Groups: These are smaller structures containing 4 to 50 galaxies. They typically have virial masses of less than 10^14 M  and span virial radii of approximately 0.4 to 1 Mpc.
+• Clusters: These are the largest virialized structures, containing 50 to 1,000 galaxies. They have much larger virial masses, ranging from 10 ^14 to 10^15, and occupy larger virial radii of 1 to 3 Mpc.
+2. Velocity Dispersion
+• Groups: Galaxies in groups move relatively slowly relative to one another, with velocity dispersions typically less than 500 km/s (often 100–500 km/s).
+• Clusters: The massive gravitational potential of a cluster induces much higher velocities. Member galaxies have velocity dispersions ranging from 500 to 2,000 km/s.
+3. Impact on Galaxy Evolution (Dynamics)
+The difference in velocity dispersion leads to fundamentally different evolutionary processes in these two environments:
+• Groups (The Merger Engine): Because the relative speeds of galaxies (∼100−500 km/s) are comparable to the internal orbital speeds of stars within the galaxies, dynamical friction is highly effective. This allows galaxies to interact, lose orbital energy, and merge. Consequently, groups are the primary sites for galaxy mergers and interactions.
+• Clusters (The Harassment Zone): In clusters, galaxies move too fast (high velocity dispersion) for dynamical friction to be effective during fly-bys. Mergers between cluster members are therefore rare. Instead, galaxies undergo high-speed encounters that heat their disks (galaxy harassment) or experience ram pressure stripping from the dense Intracluster Medium (ICM)"
+Describe several techniques for measuring masses of groups and clusters.,"1. Gravitational lensing
+2. Kinematics, i.e. velocity dispersion (virial theorem)
+3. X-ray observation of density and temperature of hot gas (assuming hydrostatic equilibrium, can be used to infer mass)"
+What are several observational techniques for identifying galaxy clusters?,"1. Optical and Infrared Imaging (Galaxy Overdensities) Astronomers identify clusters by searching for overdensities of galaxies that exhibit similar colours.
+• The Red Sequence: Clusters are rich in early-type galaxies (ellipticals and S0s), particularly in their central regions. These galaxies contain old stellar populations, placing them on the ""red sequence"" of the colour-magnitude diagram. Consequently, surveys look for concentrations of galaxies with these characteristic red colours.
+• Redshift Surveys: By measuring the positions and redshifts of large numbers of galaxies, astronomers can map the large-scale structure of the universe. In these 3D maps, galaxy clusters emerge clearly as massive overdensities, such as the Virgo cluster in the nearby universe.
+2. X-Ray Detection (Intracluster Medium) Clusters can be selected by detecting diffuse, extended X-ray emission.
+• Hot Plasma: Galaxy clusters are filled with an Intracluster Medium (ICM), a hot ionized plasma with temperatures ranging from 10^7 to 10^8 K.
+• Free-Free Emission: This hot gas emits X-rays primarily through free-free radiation (bremsstrahlung) and free-bound emission, making clusters stand out as extended sources in X-ray surveys.
+3. The Sunyaev-Zeldovich (SZ) Effect This technique identifies clusters by observing how they distort the Cosmic Microwave Background (CMB) radiation.
+• Inverse Compton Scattering: When low-energy CMB photons pass through the hot gas of a cluster, they interact with high-energy thermal electrons via inverse Compton scattering. This ""boosts"" the energy of the photons.
+• Spectral Shift: This interaction creates a distinct spectral signature in the CMB towards the cluster: a decrease in intensity at frequencies below 218 GHz and an increase in intensity at frequencies above 218 GHz.
+4. Gravitational Lensing Clusters are so massive that they warp spacetime, acting as gravitational lenses that distort the light from background galaxies.
+• Strong Lensing: In cases where the alignment is sufficient, clusters produce giant arcs or rings (Einstein radii) from background sources.
+• Mass Reconstruction: Observing these distortions allows astronomers to identify the cluster and reconstruct its total mass profile, confirming the presence of a deep gravitational potential dominated by dark matter."
+What is dynamical friction? How does it depend on fly-by velocity and mass? Hint: look at the equation in the lecture notes. Applying this equation to some galaxy situations: Why is the LMC likely to merge with MW whereas globular clusters are not? Why is dynamical friction more efficient in group environments than in clusters? Hint: think about fly-by velocities in groups vs clusters.,"Gravitational interaction between a large particle (in this context, a galaxy) and a sea of small particles (in this context, stars in another galaxy) tend to reduce the relative velocity between the two (in the regime of impulse approximation)
+	It increases with mass and decreases with velocity (as larger velocity implies shorter interaction time)"
+Describe what is known about the merger-starburst connection. Do all major mergers spark starbursts?,"The Mechanism Mergers create non-axisymmetric structures (like bars) that exert gravitational torques. These torques remove angular momentum from gas, causing it to flow rapidly to the galaxy's center, creating high densities that trigger a starburst.
+Do all major mergers spark starbursts? => No. Whether a starburst occurs depends on:
+1. Orbital Geometry: Specific disk alignments are required to generate the strong torques needed for gas inflow; only 10–30% of major mergers result in ULIRGs.
+2. Gas Fraction:
+    ◦ Gas-Poor (""Dry"") Mergers: Lack the fuel to form new stars.
+    ◦ High Gas Fraction (High-z): In very gas-rich galaxies, turbulence stabilizes the disk. Mergers in these systems tend to trigger the collapse of local clumps rather than the central inflow required for a nuclear starburst"
+Describe what is known about the connection of mergers and morphological transformations. Do all major mergers destroy disks?,"Not all mergers cause morphological transformations. Gas-rich mergers can reform the disk, only gas-poor mergers create luminous ellipticals "
+What are typical galaxy populations in present-day clusters? How does the fraction of E/S0 galaxies in clusters compare to the field? What is the Butcher Oemler effect?,"Present-day galaxy clusters are chemically and morphologically distinct from lower-density environments. They are dominated by Early-Type Galaxies (ETGs), which include elliptical and lenticular (S0) galaxies.
+• Spatial Distribution: These populations are not randomly distributed. The most massive, red, and ""dead"" galaxies are centrally concentrated within the cluster. Conversely, blue, star-forming, and less massive galaxies are preferentially located near the cluster outskirts.
+• Intracluster Medium: These galaxies reside within a hot Intracluster Medium (ICM) filled with gas at temperatures of 10^7 to 10^8 K, detectable in X-rays,.
+The Morphology-Density Relationship
+The fraction of E/S0 galaxies in clusters is significantly higher than in the ""field"" (low-density environments). This trend is known as the morphology-density relationship.
+• In Regular Clusters: The fraction of E/S0 galaxies is approximately 80%.
+• In Field Environments: The fraction of E/S0 galaxies drops to only 30%.
+This dramatic difference suggests that dense environments actively drive the transformation of galaxies from star-forming disks into quiescent ellipticals. Mechanisms responsible for this transformation include galaxy harassment (high-speed encounters heating disks), galactic cannibalism (mergers due to dynamical friction), and ram pressure stripping (removal of gas by the hot ICM)...
+The Butcher-Oemler Effect
+• Definition: Observations of clusters at intermediate redshifts (0.3<z<0.5) reveal a higher fraction of blue galaxies compared to present-day clusters,.
+• Implication: This indicates that the dominance of red, passive galaxies in modern clusters is an evolutionary outcome. In the past, clusters hosted a larger population of active, star-forming galaxies, which have since been quenched and transformed into the ETGs we observe today"
+Describe several physical processes that lead to transformations of galaxies in clusters. Describe the importance of environmental quenching for elliptical galaxies.,"1.galaxy harrasment: mutual interaction (high speed) among galaxies dynamically heat-up the disk of the galaxies, making them more prone to tidal stripping.
+2.cannibalism: dynamical friction can decelerate galaxies to fall to the center of the cluster and feed it to the galaxies in the center (BCG).
+3. Ram pressure stripping: hot gas in the cluster exert ram pressure on the galaxy when it moves inside the cluster, its CGM can get stripped and star formation quenched.
+For elliptical galaxies: for mid-size, environmental quenching is the primary mechanism for quenching star formation; for massive ones, it’s secondary to halo quenching (massive halo make the infalling gas shock-heated) and AGN feedback"
+ICM thermodynamics: cool-core vs non-cool core clusters. What is a cooling flow? Do we see them in local clusters?,"Cool-Core vs Non-Cool Core: Cool-core clusters are dynamically relaxed systems with dense centres where gas cools rapidly (t_cool <1 Gyr),. Non-cool core clusters are irregular and disturbed by mergers, preventing the formation of a dense, cool core,.
+Cooling Flow A theoretical inflow where central gas radiates away its energy, loses pressure support, and collapses inward to form stars.
+Observed in Local Clusters? No, not at the predicted rates (the ""cooling flow problem""). AGN feedback (specifically radio-mode ""maintenance"") heats the gas as it collapses to the central core, preventing the massive inflow and star formation predicted by simple model."
+What is galaxy bias? Does it vary as a function of galaxy mass?,"The deviation of the distribution (clustering) of galaxies from the distribution of matter, characterized by the two point correlation function of the galaxies relative to the total matter. 
+Yes, because the two point correlation function for the galaxies depends on the galaxy mass."
+"Sketch the stellar mass to halo mass ratio vs the total halo mass (i.e., the ”galaxy formation efficiency” as a function of galaxy mass). At what mass does this peak? Explain some effects that cause the galaxy formation efficiency to be lower in low mass galaxies.","For lower mass galaxies, the mass loading factor is larger due to smaller self-gravity"
+"What are observational properties of AGNs? Describe different subgroups (i.e., Seyferts, radio galaxies, quasars) of AGNs.","Large luminosity, non-thermal radio emission, no star-like continuum in optical/UV spectrum, X-ray bright, broad lines associated with relativistic speeds (outside the disk and within the dusty torus) from a very compact region (star-like) , high variability.
+Seyfert galaxies & radio galaxies: both have strong synchrotron radiation powered by AGN jets; 
+Seyfert: mainly S0 and spiral galaxies, with spectra of nuclear region shows emission lines that require stronger ionization than massive stars; 
+Radio: mainly elliptical, radio bright
+Quasar: in early observations appear star like (point source), but very luminous and at cosmic distances"
+Describe techniques for measuring supermassive black hole masses.,"1. Dynamical Techniques (Quiescent Galaxies) These methods measure the orbital speeds of tracers within the black hole's gravitational sphere of influence.
+• Stellar Dynamics: Maps the velocity dispersion of stars using high-resolution spectroscopy.
+• Gas Dynamics: Measures the rotation of dynamically cold gas disks.
+• Megamasers: Uses VLBI to precisely track masers(stimulated line emission in microwave band) in circumnuclear disks.
+2. Reverberation Mapping (Active Galaxies) For Active Galactic Nuclei (AGN), astronomers measure the time delay between variations in the central continuum and the surrounding Broad Line Region (BLR). This delay reveals the BLR radius (R=cΔτ), allowing mass calculation via the virial theorem (M propto RΔv^2 ) with the additional measurement of the BLR velocity inferred from the width of the broad line
+3. Scaling Relations (Indirect) Masses are often estimated using tight correlations, such as the M_BH−σ relation, which links black hole mass to the velocity dispersion (σ) of the host galaxy's bulge. (same as stellar dynamics)"
+* Compare the integrated AGN energy output to the binding energy of a galaxy (of stars).,"AGN is powered by accretion: E_AGN ~ epsilon * M_acc * c^2 where epsilon is an radiative efficiency (efficiency to convert gravitational energy of accreted material into radiation)~0.1
+Since the SMBH gains mass through accretion, its mass growth rate equates the accretion rate: dM_BH/dt=dM_acc/dt => M_BH~M_acc
+So E_AGN~ epsilon * M_BH *c^2
+	On the other hand, the binding energy of the galaxy E_bind ~ GM^2/R ~ M_* sigma^2 (by virial theorem);
+	So E_AGN/E_bind ~ epsilon * (M_BH/M_*) * (c/sigma)^2
+	Note that for stars in the galaxy, sigma~v~300km/s~10^-3c, and M_BH/M_*~10^-3, so E_AGN/E_bin ~100, i.e. the radiative energy of AGN can be much larger than the binding energy of stars"
+What is the MBH-σ relation? What does this say about co-evolution of galaxies and SMBHs?,"The M_BH-σ relation is an empirical correlation showing that the mass of a supermassive black hole increases with the stellar velocity dispersion (σ) of its host galaxy's central bulge. This correlation implies a co-evolution between the black hole and its host, suggesting that the assembly of the galaxy's stellar mass and the growth of the black hole are physically coupled rather than independent processes. This link is likely established by AGN feedback (both radiative and mechanical feedbacks), which regulates the black hole's growth and suppresses star formation in the host galaxy, preventing the black hole from growing arbitrarily large."
+What role does AGN feedback play in galaxy and cluster evolution?,"AGN feedback is crucial for regulating star formation in massive galaxies and clusters, particularly where supernova feedback is inefficient. Specifically, radio-mode (mechanical) feedback drives powerful jets that heat the Intracluster Medium (ICM), preventing the hot gas from cooling and accreting onto the central galaxy (solving the ""cooling flow problem""). This process maintains massive elliptical galaxies in a ""red and dead"" quiescent state and establishes the co-evolutionary link between the black hole and its host, known as the M_BH−σ relation"
+Compare and contrast quasar and radio-mode feedback.,"	Quasar: higher accretion rate, dominated by radiation feedback, ~10^7K, drives wind
+	Radio-mode: sub-Eddington accretion, Mdot/Mdot_Edd < 0.01, mechanical feedback associated with gas outflow dominates, jets and radio lobes, keep elliptical quenched (heats up the gas to prevent them from cooling down and collapsing)."
+"What role do non-axisymmetric potentials (i.e., bars) play in fueling of AGN?","non-axisymmetric potentials (such as bars?) exert gravitational torques that remove angular momentum from the gas. This process drives rapid gas inflow (reaching rates of 10–100 M /yr) toward the galaxy's center, increasing central gas densities by up to 100 times and providing the fuel reservoir necessary to power the Active Galactic Nucleus."
+"Dark matter halos: understand concepts of virial radius, virial mass, virial temperature.","When the local density reaches Delta_c ~ 100 of the critical density in the universe (determined by the FRW metric), the dark matter decouples from cosmic expansion and collapse to form a halo; the halo eventually reach virial equilibrium  (the collapse speed v~sqrt(GM_v/r_v)), in the equilibrium state, the halo spans virial radius and has virial mass: m_v~Delta_c * rho_crit * r_v^3;
+Virial temperature is the temperature for gas in hydrostatic equilibrium in a dark matter halo (its thermal pressure balances gravity from the halo)"
+What is the evolution of virial radii (at fixed mass)? What are implications for galaxy size evolution (assuming galaxy sizes scale as fraction of the virial radius)?,"Evolution of Virial Radii (at Fixed Mass)
+The virial radius of a dark matter halo is defined by the volume within which the density is a specific multiple (Δc ) of the critical density of the universe at that redshift (ρ_C ). Because the critical density of the universe evolves with redshift (following the Hubble parameter H(z)), the physical size of a halo of a fixed mass changes over cosmic time.
+• Mechanism: At higher redshifts (specifically z>1 when the universe is matter-dominated), the universe was much denser. The Hubble parameter scales as H^2(z) propto (1+z)^3 , reflecting this higher density.
+• The Relation: Consequently, to contain the same amount of mass in a denser universe, a halo must be smaller. The virial radius at fixed mass scales inversely with the expansion factor: R_Vir propto (1+z)^−1This means that high-redshift halos are significantly denser and smaller than halos of the same mass at the present day.
+Implications for Galaxy Size Evolution
+If we assume that galaxy sizes scale as a fixed fraction of their host halo's virial radius, the evolution of R_vir has direct consequences for the observed sizes of galaxies over cosmic time.
+• Compactness at High Redshift: Since R_Vir scales as (1+z)^−1 , galaxies at high redshift are predicted to be much more compact than galaxies of the same mass eto today.
+• Formation of ""Red Nuggets"": This theoretical expectation aligns with observational models of galaxy formation. For instance, the progenitors of massive elliptical galaxies are described as forming compact elliptical systems, often referred to as ""red nuggets,"" before evolving into the larger massive ellipticals we see at z∼0."
+What does evolution of merger rates suggest about higher redshift galaxy formation?,"Higher merger rate at higher redshift, so galaxies at higher shift grows faster"
+What does evolution of specific halo accretion rates suggest about the formation of galaxies at higher redshift?,"The specific accretion rate increases rapidly with redshift,scaling as (1+z)^2.5 meaning early halos acquired mass and gas much faster than modern ones, directly driving higher star formation rates. Furthermore, at high redshift (z>1), this growth is often fueled by ""cold mode"" accretion, where gas flows efficiently along filaments without shock-heating, allowing even massive halos to sustain rapid star formation."
+What do the cooling timescales of virial-temperature gas suggest about galaxy formation?,"We need to compare the cooling timescale with the dynamical timescale (to collapse) of the gas, only when the dynamical timescale is shorter than the cooling timescale, the galaxy can form over its lifetime;
+at a given temperature, increasing density causes cooling timescale to decrease faster than dynamical time (as t_cool propto 1/n, and t_dyn propto 1/n^½)
+
+It sets an upper limit for halo mass possible to form galaxy (as massive halo tend to have higher T_vir, and the infalling gas will be shock heated to T_vir)
+"
+"Halo-based models of star formation: understand regulator models, conditional luminosity function models, and associated predictions","1. Regulator (Bathtub) Models
+Regulator models, often called ""bathtub"" models, provide a framework where a galaxy's star formation rate (SFR) is primarily determined by the rate of gas inflow into the dark matter halo.
+• The Quasi-Equilibrium State: These models posit that the gas mass in a galaxy adjusts until the inflow rate balances the sum of the star formation rate and the outflow rate. If inflow rates vary slowly (over Gyr timescales), the galaxy reaches a ""quasi-equilibrium"" where the change in gas mass (M_gas) is approximately zero.
+• The Equation: The change in gas mass is described as: 
+M_Gas = M_in −(1−R+η)SFR Here,  
+M_in is the accretion rate of cold gas, R is the fraction of mass returned to the interstellar medium (ISM) by dying stars, and η is the mass loading factor describing outflows.
+• Star Formation Driver: In this equilibrium limit, cosmological gas accretion drives star formation, modulated by outflows. The SFR can be approximated as SFR≈ 
+M_in /(1−R+η).
+• Pressure Balance: On the disk scale, this regulation is physically maintained by a balance between gravity (P_grav ) and turbulent pressure (P_turb) generated by stellar feedback. If P_grav>P_turb, clouds collapse and stars form; the resulting feedback increases turbulence, re-expanding the gas and regulating the SFR.
+2. Linking Mass to Light: Abundance Matching and HOD
+Abundance Matching and Halo Occupation Distribution (HOD).
+• Abundance Matching: This technique compares the theoretical Halo Mass Function (predicted from ΛCDM cosmology) to the observed Galaxy Stellar Mass Function. By rank-ordering both halos and galaxies by mass and matching them, astronomers derive the Stellar Mass-to-Halo Mass Relation (SHMR).
+• Halo Occupation Distribution (HOD): This statistical approach describes how many galaxies reside per halo as a function of halo mass. It complements abundance matching and helps interpret galaxy clustering.
+• Efficiency Peak: These models reveal that star formation efficiency is not uniform. The ratio of stellar mass to halo mass peaks at M 
+halo≈10^12MMilky Way-sized halos) and decreases for both lower and higher masses.
+3. Associated Predictions and Physical Mechanisms
+These models yield specific predictions about galaxy evolution, scaling relations, and quenching.
+Evolution of Star Formation Rates
+• Accretion Scaling: The specific halo accretion rate (M/M) increases with redshift as (1+z)^2.5. Regulator models therefore predict that galaxies at high redshift formed stars much more rapidly because their halos were accreting matter faster.
+• Accretion Modes: At z>1, massive halos are fed by ""cold mode"" accretion (filamentary streams), allowing efficient star formation. At lower redshifts (z<1) and high masses (>10^11.7M ), ""hot mode"" accretion dominates, where gas shock-heats to the virial temperature, inhibiting rapid star formation.
+The Mass-Metallicity Relationship (MZR)
+• The Role of Outflows: To reproduce the observed relation where low-mass galaxies have lower metallicities, regulator models require the mass loading factor (η) to be larger in dwarf galaxies.
+• Inefficiency: High outflow rates in dwarfs (due to shallower gravitational potentials) effectively eject metals into the Circumgalactic Medium (CGM), explaining why low-mass galaxies have lower baryon conversion efficiencies and lower metallicities.
+Quenching Mechanisms
+• Mass Quenching: In massive halos (>10^12M ), shock heating prevents cold gas accretion. This ""maintenance mode,"" often aided by AGN feedback, keeps the halo gas hot and prevents it from cooling to form stars.
+• Environmental Quenching: For satellite galaxies in clusters, interaction with the hot intracluster medium leads to gas removal via ram pressure stripping and ""strangulation"" (removal of the CGM), shutting down star formation.
+Analogy: Think of a galaxy as a bathtub (the regulator model).
+• The Faucet (M_in): The water flowing in is the cold gas accreted from the cosmic web. At early times (high redshift), the water pressure is incredibly high.
+• The Drain (SFR+Outflows): The water leaves via star formation and outflows.
+• Equilibrium: The water level (gas mass) adjusts so the drain matches the faucet. If you turn the faucet up (high redshift accretion), the water level rises until the pressure forces water down the drain faster (higher SFR).
+• Abundance Matching: This is like looking at the size of the house (Halo) and guessing the size of the bathtub (Stellar Mass). We find that medium-sized houses (10 12M ) have the most efficient bathtubs relative to their size."
+Compare and contrast hot and cold modes of accretion. Discuss implications for halo (or mass) quenching.," Accretion Modes: At z>1, massive halos are fed by ""cold mode"" accretion (filamentary streams or efficient cooling), allowing efficient star formation. At lower redshifts (z<1) and high masses (>10^11.7M ), ""hot mode"" accretion dominates, where gas shock-heats to the virial temperature, inhibiting rapid star formation."
+What does theory suggest about the nature and formation of the Population III stars?,"Formation These stars formed in dark matter ""minihalos"" (∼10^6M) at high redshift (z∼20−30) from primordial gas containing only light elements produced in the Big Bang,. Unlike modern star formation, the gas contained no dust or heavy elements to aid cooling; instead, the gas cooled inefficiently via molecular hydrogen (H_2 ).
+Due to this inefficient cooling, Population III stars are predicted to have a ""top-heavy"" Initial Mass Function (IMF), meaning they were considerably more massive than typical present-day stars, with characteristic masses exceeding 10M. These massive stars likely collapsed to form ∼100M black holes, serving as the potential ""seeds"" for supermassive black holes."
+Describe the importance of atomic cooling halos for the formation of the first galaxies.,"For halo with mass > 10^8Msun, the viral temperature (hence the temperature of shock heated gas) reaches 10^4K, so that atomic cooling through Lyman alpha becomes efficient, so the gas can cool and form galaxies
+Comment: atomic cooling is important because pop III stars can destroy molecular hydrogen due to their radiative feedback"
+What are the predicted seeds of the supermassive black holes? Compare and contrast the convention and direct collapse scenarios. What observations might test these pictures?,"The Scenarios
+• Conventional (Pop III): The first massive stars (Population III) collapsed to form light seeds (∼100M ), requiring immense subsequent growth via accretion and mergers.
+• Direct Collapse: Massive gas disks collapsed directly into heavy seeds (significantly >100M), bypassing the stellar phase entirely and providing a mass ""head start"".
+Observational Tests
+• High-Redshift Quasars: The existence of massive quasars very early in the universe challenges the conventional model, as it is difficult to grow light seeds fast enough.
+• Low-Mass Black Holes: Instruments like JWST are now weighing the smallest central black holes in nearby galaxies (e.g., NGC 4736); finding many ""light"" black holes would support the Pop III scenario, while a lack thereof supports heavy seeds."
+"Describe how quasars, CMB, and galaxy spectra probe reionization. Over what redshift range is reionization thought to occur?","Reionization corresponds to about z=6-12
+Quasar: unionized IGM creates absorption line in the quasar spectrum as the photon in the quasar light excited to higher energy states; however, not all light is absorbed below a certain wavelength implies that some IGM at z=3.62 are ionized hence cannot absorb the light.
+The Gunn Peterson effect is that we observe zero flux just short of Lyman alpha if the IGM is nearly neutral -> combine with observation to infer time/redshift where IGM is neutral, i.e. pre-reionization.
+CMB: thompson scattering of CMB photon off free electrons in ionized IGM suppress anisotropy in CMB, and induces polarization. -> probe reionization.
+	galaxy  spectra: UV luminosity as an indicator for the galaxies’ evolution. We can find the correlation between the evolution (star formation etc) of the galaxy and redshift to identify reionization."
+How do we select galaxies and measure the star formation rate density at high redshift? When does the cosmic star formation rate density peak?,"Selection and Measurement Galaxies are selected via large-scale surveys (e.g., SDSS, JWST) using specific spectral signatures (e.g. recombination lines and collisionally excited lines from the HII regions) or color properties, such as the red optical continuum of ""Little Red Dots"". 
+Also observe redshifted dust emission  in the mm waveband
+The star formation rate (SFR) density is measured using three primary indicators: 
+Mainly integrated UV luminosity, corrected to dust, then SFR/L_UV can be obtained through population synthesis.
+the far-UV continuum, which traces O and B stars (requiring dust corrections); recombination lines (like Hα), which trace the ionizing photons from the most massive stars over short timescales (<10 Myr); and infrared emission, which captures star formation obscured by dust.
+Lyman break technique: observation of lyman break in the galaxies’ spectra; look for the wavelength of the break accounting for the expected redshift of the galaxy.
+The Cosmic Peak The cosmic star formation rate density peaks at z≈2. This epoch corresponds to the highest intensity of the UV background and is consistent with the formation history of luminous elliptical galaxies, which formed the bulk of their stars more than 10 billion years ago (z>2)."
+Why is star formation expected to be bursty at high redshift? How might you test this observationally?,Because of feedback in star formation is more prominent at high redshift; observation: dittos
+What is a physical picture that explains the galaxy size evolution? Provide a theoretical explanation for the evolution in the star forming main sequence?,"Assuming the galaxy size tracks that of the halo, then at fixed mass, the halo size grows as redshift decreases (as time increases); this is also consistent with the inside-out formation theory: grow due to accretion of higher AM gas
+Galaxy Size Evolution High-redshift galaxies formed in dark matter halos that were significantly denser and smaller than those today (virial radius scales as (1+z)^−1 ), resulting in initially compact galaxies. The subsequent size growth, particularly for massive elliptical galaxies, is driven by dry (dissipationless) mergers. Unlike gas-rich mergers that collapse to form stars centrally, dry mergers add stars to the outskirts, effectively ""puffing up"" the galaxy and transforming compact high-redshift ""red nuggets"" into the extended, boxy ellipticals seen at z∼0.
+Evolution of the Star Forming Main Sequence The theoretical explanation relies on ""regulator"" (or bathtub) models, where a galaxy's Star Formation Rate (SFR) reaches a quasi-equilibrium that tracks the gas inflow rate,. The sequence evolves because the specific halo accretion rate is much higher at early times, scaling as (1+z)^2.5 meaning high-redshift halos capture gas much more rapidly than modern ones, fueling significantly higher SFRs at a given mass.
+"
+Discuss observations of disk kinematics of high redshift galaxies. How does this fit within what is known about the formation history of the Milky Way disk?,"At high redshift (early on) Galaxy disks have rotation, but not supported by rotation, instead supported by turbulence, more isotropic; while for lower redshift (z<1), the disk become more rotation supported. This is an signature suggesting the same inside-out formation of the disk (like MW disk);"
+What physics might explain the evolution in the mass metallicity relationship?,"The evolution in mass metallicity is equivalent to the dependence of metallicity relationship on redshift.
+We see that at fixed mass, higher redshift ⇔ lower metallicity, and this is because:
+1.larger (metal poor) gas inflow rate 
+2.feedback stronger, causing larger mass loading factor (more outflow), so the gas cannot be efficiently enriched by the metals generated in stellar evolution.
+
+• The ""Leaky Box"" (Outflows): This is the dominant factor. Low-mass galaxies have shallower gravitational potentials, allowing stellar feedback to drive powerful outflows that eject metal-enriched gas into the circumgalactic medium (CGM),. In contrast, massive galaxies have deep potential wells that retain metals effectively.
+• Gas Fractions and Efficiency: Low-mass galaxies tend to have higher gas fractions and are less efficient at converting their gas reservoirs into stars. In chemical evolution models, a system with a high remaining gas fraction naturally exhibits lower metallicity because the fuel has not been fully processed.
+• Downsizing: Massive galaxies formed the bulk of their stars (and thus metals) rapidly in the early universe (""downsizing""), whereas lower-mass galaxies have more extended star formation histories, evolving chemically over longer timescales.
+"
+What do observations suggest about the seeds of the supermassive black holes?,"need  to grow from as early as z~35 to form SMBH mass observed in quasars starting from a stellar-mass seed, even assuming Eddington-limited growth
+• Distinguishing Scenarios: Observations aim to differentiate between ""light seeds"" (∼100M), formed from the collapse of Population III stars, and ""heavy seeds"", formed via the direct collapse of gas disks.
+• Testing via Low-Mass Black Holes: A key observational test involves weighing the smallest supermassive black holes in the local universe. If ""light seeds"" were the dominant mechanism, we expect to find a population of lower-mass black holes that never grew significantly; ""heavy seeds"" would imply a mass floor below which few black holes exist.
+• Current Capabilities: The JWST/NIRSpec IFU is now providing the necessary high signal-to-noise stellar kinematics to constrain black hole masses down to ∼5×10^6 M  in nearby galaxies (e.g., NGC 4736), offering the first concrete steps toward distinguishing these formation pathways.
+"
